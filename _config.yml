@@ -1,5 +1,6 @@
 title: My Bui # your name (or website title) here
 logo: "/images/logo.png" # your photo (or logo) here
+
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <br><br>
   Biz Dev who also does DS and ML
@@ -12,5 +13,5 @@ description: > # your text below (remove <br> elements if you don't need line br
   
   
   
-theme: jekyll-theme-minimal
-google_analytics: UA-000000-0 # your Google Analytics tracking ID here
+#theme: jekyll-theme-minimal
+#google_analytics: UA-000000-0 # your Google Analytics tracking ID here
