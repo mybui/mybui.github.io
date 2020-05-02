@@ -1,7 +1,7 @@
 title: My Bui # your name (or website title) here
-<br><br>
+  <br><br>
 logo: "/images/logo.png" # your photo (or logo) here
-<br><br>
+  <br><br>
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <br><br>
   Biz Dev who also does DS and ML
