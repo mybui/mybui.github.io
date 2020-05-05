@@ -5,7 +5,7 @@
 ### Data Science
 
 [Most popular posts and golden hour of publishing comments](/hackerNews.md)
-<img src="images/hackNews.jpg"/>
+<img src="images/hackerNews.jpg"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
