@@ -4,8 +4,8 @@
 
 ### Data Science
 
-[Data Wragling: App Store and Google Play](/appMarkets.md)
-<img src="images/appMarkets.jpeg"/>
+[Most popular posts and golden hour of publishing comments](/hackerNews.md)
+<img src="images/hackNews.jpeg"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
