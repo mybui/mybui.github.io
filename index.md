@@ -19,7 +19,7 @@
 <img src="images/appMarkets.jpeg"/>
 
 ---
-[Titanic conditional plots](/titanic.md)
+[Titanic conditional plot](/titanic.md)
 
 <img src="images/titanic.jpg"/>
 
