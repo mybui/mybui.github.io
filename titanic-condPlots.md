@@ -191,5 +191,5 @@ plt.show()
 
 
 
-![png](output_3_1.png)
+![png](images/output_3_1.png)
 
