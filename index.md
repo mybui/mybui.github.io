@@ -13,7 +13,7 @@
 
 ---
 [*'Pending'* App markets: Google Play Store vs. App Store](/appMarkets.md)
-<img src="images/appMarkets.jpg"/>
+<img src="images/appMarkets.jpeg"/>
 
 ---
 
