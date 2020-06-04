@@ -1025,5 +1025,5 @@ plt.show()
 ```
 
 
-![png](output_4_0.png)
+![png](/images/output_4_0.png)
 
