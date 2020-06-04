@@ -201,10 +201,8 @@ sns.despine(left=True, bottom=True)
 plt.show()
 ```
 
-    /Users/MimiHMB/anaconda3/lib/python3.7/site-packages/seaborn/axisgrid.py:243: UserWarning: The `size` parameter has been renamed to `height`; please update your code.
-      warnings.warn(msg, UserWarning)
 
 
 
-![png](output_4_1.png)
+![png](iamges/output_4_1.png)
 
