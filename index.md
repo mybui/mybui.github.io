@@ -8,8 +8,8 @@
 <img src="images/hackerNews.jpg"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Gender gap STEM degrees](/stemDegree.md)
+<img src="images/stemDegree.jpg"/>
 
 ---
 [Project 3 Title](http://example.com/)
