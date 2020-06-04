@@ -1,0 +1,1029 @@
+## The Department of Education Statistics releases a data set annually containing the percentage of bachelor's degrees granted to women from 1970 to 2012. The data set is broken up into 17 categories of degrees, with each column as a separate category. 
+
+## Randal Olson, a data scientist at University of Pennsylvania, has cleaned the data set and made it available on his personal website.
+
+## We'll explore how we can communicate the nuanced narrative of gender gap using effective data visualization. 
+
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+```
+
+
+```python
+women_degrees = pd.read_csv('percent-bachelors-degrees-women-usa.csv')
+women_degrees
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Agriculture</th>
+      <th>Architecture</th>
+      <th>Art and Performance</th>
+      <th>Biology</th>
+      <th>Business</th>
+      <th>Communications and Journalism</th>
+      <th>Computer Science</th>
+      <th>Education</th>
+      <th>Engineering</th>
+      <th>English</th>
+      <th>Foreign Languages</th>
+      <th>Health Professions</th>
+      <th>Math and Statistics</th>
+      <th>Physical Sciences</th>
+      <th>Psychology</th>
+      <th>Public Administration</th>
+      <th>Social Sciences and History</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1970</td>
+      <td>4.229798</td>
+      <td>11.921005</td>
+      <td>59.7</td>
+      <td>29.088363</td>
+      <td>9.064439</td>
+      <td>35.3</td>
+      <td>13.6</td>
+      <td>74.535328</td>
+      <td>0.8</td>
+      <td>65.570923</td>
+      <td>73.8</td>
+      <td>77.1</td>
+      <td>38.0</td>
+      <td>13.8</td>
+      <td>44.4</td>
+      <td>68.4</td>
+      <td>36.8</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1971</td>
+      <td>5.452797</td>
+      <td>12.003106</td>
+      <td>59.9</td>
+      <td>29.394403</td>
+      <td>9.503187</td>
+      <td>35.5</td>
+      <td>13.6</td>
+      <td>74.149204</td>
+      <td>1.0</td>
+      <td>64.556485</td>
+      <td>73.9</td>
+      <td>75.5</td>
+      <td>39.0</td>
+      <td>14.9</td>
+      <td>46.2</td>
+      <td>65.5</td>
+      <td>36.2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1972</td>
+      <td>7.420710</td>
+      <td>13.214594</td>
+      <td>60.4</td>
+      <td>29.810221</td>
+      <td>10.558962</td>
+      <td>36.6</td>
+      <td>14.9</td>
+      <td>73.554520</td>
+      <td>1.2</td>
+      <td>63.664263</td>
+      <td>74.6</td>
+      <td>76.9</td>
+      <td>40.2</td>
+      <td>14.8</td>
+      <td>47.6</td>
+      <td>62.6</td>
+      <td>36.1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1973</td>
+      <td>9.653602</td>
+      <td>14.791613</td>
+      <td>60.2</td>
+      <td>31.147915</td>
+      <td>12.804602</td>
+      <td>38.4</td>
+      <td>16.4</td>
+      <td>73.501814</td>
+      <td>1.6</td>
+      <td>62.941502</td>
+      <td>74.9</td>
+      <td>77.4</td>
+      <td>40.9</td>
+      <td>16.5</td>
+      <td>50.4</td>
+      <td>64.3</td>
+      <td>36.4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1974</td>
+      <td>14.074623</td>
+      <td>17.444688</td>
+      <td>61.9</td>
+      <td>32.996183</td>
+      <td>16.204850</td>
+      <td>40.5</td>
+      <td>18.9</td>
+      <td>73.336811</td>
+      <td>2.2</td>
+      <td>62.413412</td>
+      <td>75.3</td>
+      <td>77.9</td>
+      <td>41.8</td>
+      <td>18.2</td>
+      <td>52.6</td>
+      <td>66.1</td>
+      <td>37.3</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1975</td>
+      <td>18.333162</td>
+      <td>19.134048</td>
+      <td>60.9</td>
+      <td>34.449902</td>
+      <td>19.686249</td>
+      <td>41.5</td>
+      <td>19.8</td>
+      <td>72.801854</td>
+      <td>3.2</td>
+      <td>61.647206</td>
+      <td>75.0</td>
+      <td>78.9</td>
+      <td>40.7</td>
+      <td>19.1</td>
+      <td>54.5</td>
+      <td>63.0</td>
+      <td>37.7</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1976</td>
+      <td>22.252760</td>
+      <td>21.394491</td>
+      <td>61.3</td>
+      <td>36.072871</td>
+      <td>23.430038</td>
+      <td>44.3</td>
+      <td>23.9</td>
+      <td>72.166525</td>
+      <td>4.5</td>
+      <td>62.148194</td>
+      <td>74.4</td>
+      <td>79.2</td>
+      <td>41.5</td>
+      <td>20.0</td>
+      <td>56.9</td>
+      <td>65.6</td>
+      <td>39.2</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1977</td>
+      <td>24.640177</td>
+      <td>23.740541</td>
+      <td>62.0</td>
+      <td>38.331386</td>
+      <td>27.163427</td>
+      <td>46.9</td>
+      <td>25.7</td>
+      <td>72.456395</td>
+      <td>6.8</td>
+      <td>62.723067</td>
+      <td>74.3</td>
+      <td>80.5</td>
+      <td>41.1</td>
+      <td>21.3</td>
+      <td>59.0</td>
+      <td>69.3</td>
+      <td>40.5</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>1978</td>
+      <td>27.146192</td>
+      <td>25.849240</td>
+      <td>62.5</td>
+      <td>40.112496</td>
+      <td>30.527519</td>
+      <td>49.9</td>
+      <td>28.1</td>
+      <td>73.192821</td>
+      <td>8.4</td>
+      <td>63.619122</td>
+      <td>74.3</td>
+      <td>81.9</td>
+      <td>41.6</td>
+      <td>22.5</td>
+      <td>61.3</td>
+      <td>71.5</td>
+      <td>41.8</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1979</td>
+      <td>29.633365</td>
+      <td>27.770477</td>
+      <td>63.2</td>
+      <td>42.065551</td>
+      <td>33.621634</td>
+      <td>52.3</td>
+      <td>30.2</td>
+      <td>73.821142</td>
+      <td>9.4</td>
+      <td>65.088390</td>
+      <td>74.2</td>
+      <td>82.3</td>
+      <td>42.3</td>
+      <td>23.7</td>
+      <td>63.3</td>
+      <td>73.3</td>
+      <td>43.6</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1980</td>
+      <td>30.759390</td>
+      <td>28.080381</td>
+      <td>63.4</td>
+      <td>43.999257</td>
+      <td>36.765725</td>
+      <td>54.7</td>
+      <td>32.5</td>
+      <td>74.981032</td>
+      <td>10.3</td>
+      <td>65.284130</td>
+      <td>74.1</td>
+      <td>83.5</td>
+      <td>42.8</td>
+      <td>24.6</td>
+      <td>65.1</td>
+      <td>74.6</td>
+      <td>44.2</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1981</td>
+      <td>31.318655</td>
+      <td>29.841694</td>
+      <td>63.3</td>
+      <td>45.249512</td>
+      <td>39.266230</td>
+      <td>56.4</td>
+      <td>34.8</td>
+      <td>75.845123</td>
+      <td>11.6</td>
+      <td>65.838322</td>
+      <td>73.9</td>
+      <td>84.1</td>
+      <td>43.2</td>
+      <td>25.7</td>
+      <td>66.9</td>
+      <td>74.7</td>
+      <td>44.6</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1982</td>
+      <td>32.636664</td>
+      <td>34.816248</td>
+      <td>63.1</td>
+      <td>45.967338</td>
+      <td>41.949373</td>
+      <td>58.0</td>
+      <td>36.3</td>
+      <td>75.843649</td>
+      <td>12.4</td>
+      <td>65.847352</td>
+      <td>72.7</td>
+      <td>84.4</td>
+      <td>44.0</td>
+      <td>27.3</td>
+      <td>67.5</td>
+      <td>76.8</td>
+      <td>44.6</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1983</td>
+      <td>31.635347</td>
+      <td>35.826257</td>
+      <td>62.4</td>
+      <td>46.713135</td>
+      <td>43.542070</td>
+      <td>58.6</td>
+      <td>37.1</td>
+      <td>75.950601</td>
+      <td>13.1</td>
+      <td>65.918380</td>
+      <td>71.8</td>
+      <td>84.6</td>
+      <td>44.3</td>
+      <td>27.6</td>
+      <td>67.9</td>
+      <td>76.1</td>
+      <td>44.1</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1984</td>
+      <td>31.092947</td>
+      <td>35.453083</td>
+      <td>62.1</td>
+      <td>47.669083</td>
+      <td>45.124030</td>
+      <td>59.1</td>
+      <td>36.8</td>
+      <td>75.869116</td>
+      <td>13.5</td>
+      <td>65.749862</td>
+      <td>72.1</td>
+      <td>85.1</td>
+      <td>46.2</td>
+      <td>28.0</td>
+      <td>68.2</td>
+      <td>75.9</td>
+      <td>44.1</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>1985</td>
+      <td>31.379659</td>
+      <td>36.133348</td>
+      <td>61.8</td>
+      <td>47.909884</td>
+      <td>45.747782</td>
+      <td>59.0</td>
+      <td>35.7</td>
+      <td>75.923440</td>
+      <td>13.5</td>
+      <td>65.798199</td>
+      <td>70.8</td>
+      <td>85.3</td>
+      <td>46.5</td>
+      <td>27.5</td>
+      <td>69.0</td>
+      <td>75.0</td>
+      <td>43.8</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>1986</td>
+      <td>31.198719</td>
+      <td>37.240223</td>
+      <td>62.1</td>
+      <td>48.300678</td>
+      <td>46.532915</td>
+      <td>60.0</td>
+      <td>34.7</td>
+      <td>76.143015</td>
+      <td>13.9</td>
+      <td>65.982561</td>
+      <td>71.2</td>
+      <td>85.7</td>
+      <td>46.7</td>
+      <td>28.4</td>
+      <td>69.0</td>
+      <td>75.7</td>
+      <td>44.0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>1987</td>
+      <td>31.486429</td>
+      <td>38.730675</td>
+      <td>61.7</td>
+      <td>50.209878</td>
+      <td>46.690466</td>
+      <td>60.2</td>
+      <td>32.4</td>
+      <td>76.963092</td>
+      <td>14.0</td>
+      <td>66.706031</td>
+      <td>72.0</td>
+      <td>85.5</td>
+      <td>46.5</td>
+      <td>30.4</td>
+      <td>70.1</td>
+      <td>76.4</td>
+      <td>43.9</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1988</td>
+      <td>31.085087</td>
+      <td>39.398907</td>
+      <td>61.7</td>
+      <td>50.099811</td>
+      <td>46.764828</td>
+      <td>60.4</td>
+      <td>30.8</td>
+      <td>77.627662</td>
+      <td>13.9</td>
+      <td>67.144498</td>
+      <td>72.3</td>
+      <td>85.2</td>
+      <td>46.2</td>
+      <td>29.7</td>
+      <td>70.9</td>
+      <td>75.6</td>
+      <td>44.4</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>1989</td>
+      <td>31.612403</td>
+      <td>39.096540</td>
+      <td>62.0</td>
+      <td>50.774716</td>
+      <td>46.781565</td>
+      <td>60.5</td>
+      <td>29.9</td>
+      <td>78.111919</td>
+      <td>14.1</td>
+      <td>67.017072</td>
+      <td>72.4</td>
+      <td>84.6</td>
+      <td>46.2</td>
+      <td>31.3</td>
+      <td>71.6</td>
+      <td>76.0</td>
+      <td>44.2</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1990</td>
+      <td>32.703444</td>
+      <td>40.824047</td>
+      <td>62.6</td>
+      <td>50.818094</td>
+      <td>47.200851</td>
+      <td>60.8</td>
+      <td>29.4</td>
+      <td>78.866859</td>
+      <td>14.1</td>
+      <td>66.921902</td>
+      <td>71.2</td>
+      <td>83.9</td>
+      <td>47.3</td>
+      <td>31.6</td>
+      <td>72.6</td>
+      <td>77.6</td>
+      <td>45.1</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>1991</td>
+      <td>34.711837</td>
+      <td>33.679881</td>
+      <td>62.1</td>
+      <td>51.468805</td>
+      <td>47.224325</td>
+      <td>60.8</td>
+      <td>28.7</td>
+      <td>78.991246</td>
+      <td>14.0</td>
+      <td>66.241475</td>
+      <td>71.1</td>
+      <td>83.5</td>
+      <td>47.0</td>
+      <td>32.6</td>
+      <td>73.2</td>
+      <td>78.2</td>
+      <td>45.5</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>1992</td>
+      <td>33.931660</td>
+      <td>35.202356</td>
+      <td>61.0</td>
+      <td>51.349742</td>
+      <td>47.219395</td>
+      <td>59.7</td>
+      <td>28.2</td>
+      <td>78.435182</td>
+      <td>14.5</td>
+      <td>65.622457</td>
+      <td>71.0</td>
+      <td>83.0</td>
+      <td>47.4</td>
+      <td>32.6</td>
+      <td>73.2</td>
+      <td>77.3</td>
+      <td>45.8</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1993</td>
+      <td>34.946832</td>
+      <td>35.777159</td>
+      <td>60.2</td>
+      <td>51.124844</td>
+      <td>47.639332</td>
+      <td>58.7</td>
+      <td>28.5</td>
+      <td>77.267312</td>
+      <td>14.9</td>
+      <td>65.730950</td>
+      <td>70.0</td>
+      <td>82.4</td>
+      <td>46.4</td>
+      <td>33.6</td>
+      <td>73.1</td>
+      <td>78.0</td>
+      <td>46.1</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>1994</td>
+      <td>36.032674</td>
+      <td>34.433531</td>
+      <td>59.4</td>
+      <td>52.246218</td>
+      <td>47.983924</td>
+      <td>58.1</td>
+      <td>28.5</td>
+      <td>75.814933</td>
+      <td>15.7</td>
+      <td>65.641978</td>
+      <td>69.1</td>
+      <td>81.8</td>
+      <td>47.0</td>
+      <td>34.8</td>
+      <td>72.9</td>
+      <td>78.8</td>
+      <td>46.8</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>1995</td>
+      <td>36.844807</td>
+      <td>36.063218</td>
+      <td>59.2</td>
+      <td>52.599403</td>
+      <td>48.573181</td>
+      <td>58.8</td>
+      <td>27.5</td>
+      <td>75.125256</td>
+      <td>16.2</td>
+      <td>65.936949</td>
+      <td>69.6</td>
+      <td>81.5</td>
+      <td>46.1</td>
+      <td>35.9</td>
+      <td>73.0</td>
+      <td>78.8</td>
+      <td>47.9</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>1996</td>
+      <td>38.969775</td>
+      <td>35.926485</td>
+      <td>58.6</td>
+      <td>53.789880</td>
+      <td>48.647393</td>
+      <td>58.7</td>
+      <td>27.1</td>
+      <td>75.035199</td>
+      <td>16.7</td>
+      <td>66.437779</td>
+      <td>69.7</td>
+      <td>81.3</td>
+      <td>46.4</td>
+      <td>37.3</td>
+      <td>73.9</td>
+      <td>79.8</td>
+      <td>48.7</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>1997</td>
+      <td>40.685685</td>
+      <td>35.101934</td>
+      <td>58.7</td>
+      <td>54.999469</td>
+      <td>48.561050</td>
+      <td>60.0</td>
+      <td>26.8</td>
+      <td>75.163701</td>
+      <td>17.0</td>
+      <td>66.786355</td>
+      <td>70.0</td>
+      <td>81.9</td>
+      <td>47.0</td>
+      <td>38.3</td>
+      <td>74.4</td>
+      <td>81.0</td>
+      <td>49.2</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>1998</td>
+      <td>41.912403</td>
+      <td>37.598545</td>
+      <td>59.1</td>
+      <td>56.351248</td>
+      <td>49.258515</td>
+      <td>60.0</td>
+      <td>27.0</td>
+      <td>75.486160</td>
+      <td>17.8</td>
+      <td>67.255448</td>
+      <td>70.1</td>
+      <td>82.1</td>
+      <td>48.3</td>
+      <td>39.7</td>
+      <td>75.1</td>
+      <td>81.3</td>
+      <td>50.5</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>1999</td>
+      <td>42.887202</td>
+      <td>38.631529</td>
+      <td>59.2</td>
+      <td>58.228823</td>
+      <td>49.810208</td>
+      <td>61.2</td>
+      <td>28.1</td>
+      <td>75.838162</td>
+      <td>18.6</td>
+      <td>67.820221</td>
+      <td>70.9</td>
+      <td>83.5</td>
+      <td>47.8</td>
+      <td>40.2</td>
+      <td>76.5</td>
+      <td>81.1</td>
+      <td>51.2</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>2000</td>
+      <td>45.057766</td>
+      <td>40.023585</td>
+      <td>59.2</td>
+      <td>59.389857</td>
+      <td>49.803616</td>
+      <td>61.9</td>
+      <td>27.7</td>
+      <td>76.692143</td>
+      <td>18.4</td>
+      <td>68.365995</td>
+      <td>70.9</td>
+      <td>83.5</td>
+      <td>48.2</td>
+      <td>41.0</td>
+      <td>77.5</td>
+      <td>81.1</td>
+      <td>51.8</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>2001</td>
+      <td>45.866015</td>
+      <td>40.690282</td>
+      <td>59.4</td>
+      <td>60.712331</td>
+      <td>50.275145</td>
+      <td>63.0</td>
+      <td>27.6</td>
+      <td>77.375229</td>
+      <td>19.0</td>
+      <td>68.578520</td>
+      <td>71.2</td>
+      <td>85.1</td>
+      <td>47.0</td>
+      <td>42.2</td>
+      <td>77.5</td>
+      <td>80.9</td>
+      <td>51.7</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>2002</td>
+      <td>47.134658</td>
+      <td>41.132951</td>
+      <td>60.9</td>
+      <td>61.895128</td>
+      <td>50.552335</td>
+      <td>63.7</td>
+      <td>27.0</td>
+      <td>78.644244</td>
+      <td>18.7</td>
+      <td>68.829960</td>
+      <td>70.5</td>
+      <td>85.8</td>
+      <td>45.7</td>
+      <td>41.1</td>
+      <td>77.7</td>
+      <td>81.3</td>
+      <td>51.5</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>2003</td>
+      <td>47.935187</td>
+      <td>42.758543</td>
+      <td>61.1</td>
+      <td>62.169456</td>
+      <td>50.345598</td>
+      <td>64.6</td>
+      <td>25.1</td>
+      <td>78.544948</td>
+      <td>18.8</td>
+      <td>68.894487</td>
+      <td>70.6</td>
+      <td>86.5</td>
+      <td>46.0</td>
+      <td>41.7</td>
+      <td>77.8</td>
+      <td>81.5</td>
+      <td>50.9</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>2004</td>
+      <td>47.887140</td>
+      <td>43.466493</td>
+      <td>61.3</td>
+      <td>61.914587</td>
+      <td>49.950894</td>
+      <td>64.2</td>
+      <td>22.2</td>
+      <td>78.650748</td>
+      <td>18.2</td>
+      <td>68.454734</td>
+      <td>70.8</td>
+      <td>86.5</td>
+      <td>44.7</td>
+      <td>42.1</td>
+      <td>77.8</td>
+      <td>80.7</td>
+      <td>50.5</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>2005</td>
+      <td>47.672754</td>
+      <td>43.100368</td>
+      <td>61.4</td>
+      <td>61.500984</td>
+      <td>49.791851</td>
+      <td>63.4</td>
+      <td>20.6</td>
+      <td>79.067122</td>
+      <td>17.9</td>
+      <td>68.571221</td>
+      <td>69.9</td>
+      <td>86.0</td>
+      <td>45.1</td>
+      <td>41.6</td>
+      <td>77.5</td>
+      <td>81.2</td>
+      <td>50.0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>2006</td>
+      <td>46.790300</td>
+      <td>44.499331</td>
+      <td>61.6</td>
+      <td>60.172845</td>
+      <td>49.210914</td>
+      <td>63.0</td>
+      <td>18.6</td>
+      <td>78.686306</td>
+      <td>16.8</td>
+      <td>68.297594</td>
+      <td>69.6</td>
+      <td>85.9</td>
+      <td>44.1</td>
+      <td>40.8</td>
+      <td>77.4</td>
+      <td>81.2</td>
+      <td>49.8</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>2007</td>
+      <td>47.605026</td>
+      <td>43.100459</td>
+      <td>61.4</td>
+      <td>59.411993</td>
+      <td>49.000459</td>
+      <td>62.5</td>
+      <td>17.6</td>
+      <td>78.721413</td>
+      <td>16.8</td>
+      <td>67.874923</td>
+      <td>70.2</td>
+      <td>85.4</td>
+      <td>44.1</td>
+      <td>40.7</td>
+      <td>77.1</td>
+      <td>82.1</td>
+      <td>49.3</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>2008</td>
+      <td>47.570834</td>
+      <td>42.711730</td>
+      <td>60.7</td>
+      <td>59.305765</td>
+      <td>48.888027</td>
+      <td>62.4</td>
+      <td>17.8</td>
+      <td>79.196327</td>
+      <td>16.5</td>
+      <td>67.594028</td>
+      <td>70.2</td>
+      <td>85.2</td>
+      <td>43.3</td>
+      <td>40.7</td>
+      <td>77.2</td>
+      <td>81.7</td>
+      <td>49.4</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>2009</td>
+      <td>48.667224</td>
+      <td>43.348921</td>
+      <td>61.0</td>
+      <td>58.489583</td>
+      <td>48.840474</td>
+      <td>62.8</td>
+      <td>18.1</td>
+      <td>79.532909</td>
+      <td>16.8</td>
+      <td>67.969792</td>
+      <td>69.3</td>
+      <td>85.1</td>
+      <td>43.3</td>
+      <td>40.7</td>
+      <td>77.1</td>
+      <td>82.0</td>
+      <td>49.4</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>2010</td>
+      <td>48.730042</td>
+      <td>42.066721</td>
+      <td>61.3</td>
+      <td>59.010255</td>
+      <td>48.757988</td>
+      <td>62.5</td>
+      <td>17.6</td>
+      <td>79.618625</td>
+      <td>17.2</td>
+      <td>67.928106</td>
+      <td>69.0</td>
+      <td>85.0</td>
+      <td>43.1</td>
+      <td>40.2</td>
+      <td>77.0</td>
+      <td>81.7</td>
+      <td>49.3</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>2011</td>
+      <td>50.037182</td>
+      <td>42.773438</td>
+      <td>61.2</td>
+      <td>58.742397</td>
+      <td>48.180418</td>
+      <td>62.2</td>
+      <td>18.2</td>
+      <td>79.432812</td>
+      <td>17.5</td>
+      <td>68.426730</td>
+      <td>69.5</td>
+      <td>84.8</td>
+      <td>43.1</td>
+      <td>40.1</td>
+      <td>76.7</td>
+      <td>81.9</td>
+      <td>49.2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+stem_cats = ['Psychology', 'Biology', 'Math and Statistics', 'Physical Sciences', 'Computer Science', 'Engineering']
+lib_arts_cats = ['Foreign Languages', 'English', 'Communications and Journalism', 'Art and Performance', 'Social Sciences and History']
+other_cats = ['Health Professions', 'Public Administration', 'Education', 'Agriculture','Business', 'Architecture']
+```
+
+
+```python
+fig = plt.figure(figsize=(15, 15))
+
+for sp in range (0, 6):
+    ax = fig.add_subplot(6, 3, 3*sp+1)
+    ax.plot(women_degrees['Year'], women_degrees[stem_cats[sp]], c=cb_dark_blue, label='Women', linewidth=2)
+    ax.plot(women_degrees['Year'], 100-women_degrees[stem_cats[sp]], c=cb_orange, label='Men', linewidth=2)
+    
+    for key,spine in ax.spines.items():
+        spine.set_visible(False)
+    ax.set_xlim(1968, 2011)
+    ax.set_ylim(0,100)
+    ax.set_title(stem_cats[sp])
+    ax.tick_params(bottom=False, top=False, left=False, right=False, labelbottom=False)
+    ax.set_yticks([0, 50, 100])
+    ax.axhline(50, c=(171/255, 171/255, 171/255), alpha=0.3)
+    
+    if sp == 0:
+        ax.text(2005, 87, 'Men')
+        ax.text(2002, 8, 'Women')
+    elif sp == 5:
+        ax.text(2005, 62, 'Men')
+        ax.text(2001, 35, 'Women')
+        ax.tick_params(labelbottom=True)
+        
+for sp in range (0, 5):
+    ax = fig.add_subplot(6, 3, 3*sp+2)
+    ax.plot(women_degrees['Year'], women_degrees[lib_arts_cats[sp]], c=cb_dark_blue, label='Women', linewidth=2)
+    ax.plot(women_degrees['Year'], 100-women_degrees[lib_arts_cats[sp]], c=cb_orange, label='Men', linewidth=2)
+    
+    for key,spine in ax.spines.items():
+        spine.set_visible(False)
+    ax.set_xlim(1968, 2011)
+    ax.set_ylim(0,100)
+    ax.set_title(lib_arts_cats[sp])
+    ax.tick_params(bottom=False, top=False, left=False, right=False, labelbottom=False)
+    ax.set_yticks([0, 50, 100])
+    ax.axhline(50, c=(171/255, 171/255, 171/255), alpha=0.3)
+    
+    if sp == 0:
+        ax.text(2005, 87, 'Men')
+        ax.text(2002, 8, 'Women')
+    elif sp == 4:
+        ax.tick_params(labelbottom=True)
+
+for sp in range (0, 6):
+    ax = fig.add_subplot(6, 3, 3*sp+3)
+    ax.plot(women_degrees['Year'], women_degrees[other_cats[sp]], c=cb_dark_blue, label='Women', linewidth=2)
+    ax.plot(women_degrees['Year'], 100-women_degrees[other_cats[sp]], c=cb_orange, label='Men', linewidth=2)
+    
+    for key,spine in ax.spines.items():
+        spine.set_visible(False)
+    ax.set_xlim(1968, 2011)
+    ax.set_ylim(0,100)
+    ax.set_title(other_cats[sp])
+    ax.tick_params(bottom=False, top=False, left=False, right=False, labelbottom=False)
+    ax.set_yticks([0, 50, 100])
+    ax.axhline(50, c=(171/255, 171/255, 171/255), alpha=0.3)
+    
+    if sp == 0:
+        ax.text(2005, 87, 'Men')
+        ax.text(2002, 8, 'Women')
+    elif sp == 5:
+        ax.text(2005, 62, 'Men')
+        ax.text(2001, 35, 'Women')
+        ax.tick_params(labelbottom=True)
+plt.savefig('gender_degrees.png')
+plt.show()
+```
+
+
+![png](output_4_0.png)
+
