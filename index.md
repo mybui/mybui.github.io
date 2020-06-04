@@ -5,18 +5,25 @@
 ### Data Science
 
 [Most popular posts and golden hour of publishing comments](/hackerNews.md)
+
 <img src="images/hackerNews.jpg"/>
 
 ---
 [Gender gap STEM degrees](/stemDegree.md)
+
 <img src="images/stemDegree.jpg"/>
 
 ---
-[*'Pending'* App markets: Google Play Store vs. App Store](/appMarkets.md)
+[**Pending** App markets: Google Play Store vs. App Store](/appMarkets.md)
+
 <img src="images/appMarkets.jpeg"/>
 
 ---
+[Titanic conditional plots](/titanic-condPlots.md)
 
+<img src="images/titanic.jpg"/>
+
+---
 ### Category Name 2
 
 - [Project 1 Title](http://example.com/)
