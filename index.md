@@ -4,6 +4,11 @@
 
 ### Data Science
 
+[Sales Project: Data Cleaning and Analysis ](/dressSales.md)
+
+<img src="images/dressSales.jpg"/>
+
+---
 [Most popular posts and golden hour of publishing comments](/hackerNews.md)
 
 <img src="images/hackerNews.jpg"/>
