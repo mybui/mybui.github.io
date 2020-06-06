@@ -1,5 +1,3 @@
-## Sample data cleaning and analysis for a sales project
-
 ## In this project, we'll transform a raw uncleaned data set into an organized and well-formatted data set for data analysis
 
 ### Data: Dress Attributes and Sales
