@@ -24,12 +24,8 @@
 <img src="images/stemDegree.jpg"/>
 
 ---
-[**Pending** App markets: Google Play Store vs. App Store](/appMarkets.md)
 
-<img src="images/appMarkets.jpeg"/>
-
----
-[Titanic conditional plot](/titanic.md)
+[Titanic gender vs. survival](/titanic.md)
 
 <img src="images/titanic.jpg"/>
 
