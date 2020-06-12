@@ -4,7 +4,12 @@
 
 ### Data Science
 
-[Sales Project: Data Cleaning and Analysis ](/dressSales.md)
+[Income and Religion in the US](/pew.md)
+
+<img src="images/religionUs.png"/>
+
+---
+[Sales Project: Data Cleaning and Analysis](/dressSales.md)
 
 <img src="images/dressSales.jpg"/>
 
