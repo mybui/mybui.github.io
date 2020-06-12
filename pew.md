@@ -1193,7 +1193,7 @@ plt.tick_params(left=False, top=False, right=False, labelleft=False)
 ```
 
 
-![png](output_14_0.png)
+![png](images/output_14_0.png)
 
 
 ### 2. Visualize income distribution
@@ -1211,7 +1211,7 @@ plt.tick_params(top=False, right=False)
 ```
 
 
-![png](output_16_0.png)
+![png](images/output_16_0.png)
 
 
 
@@ -1784,5 +1784,5 @@ plt.show()
 ```
 
 
-![png](output_20_0.png)
+![png](images/output_20_0.png)
 
