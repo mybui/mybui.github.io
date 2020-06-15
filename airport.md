@@ -1094,12 +1094,6 @@ airports[airports['code'].isin(np.intersect1d(source.index, dest.index))]['city'
 
 
 ```python
-import os
-os.environ["PROJ_LIB"] = "/Users/MimiHMB/anaconda3/pkgs/proj4-5.2.0-h0a44026_1/share/proj"
-```
-
-
-```python
 from mpl_toolkits.basemap import Basemap
 ```
 
@@ -3160,7 +3154,7 @@ m.drawcoastlines()
 
 
 
-![png](output_27_1.png)
+![png](images/output_27_1.png)
 
 
 ### We also created a visualization of one sample airport which includes its flight routes.
@@ -3362,5 +3356,5 @@ plt.show()
 
 
 
-![png](output_31_1.png)
+![png](images/output_31_1.png)
 
