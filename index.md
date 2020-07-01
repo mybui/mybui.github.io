@@ -4,7 +4,7 @@
 
 ### Data Science
 
-[Large data set analysis with dask and plotly: NYC parking ticket violations](/nycParkingTickets.md)
+[Large data set analysis with Dask and Plotly: NYC parking ticket violations](/nycParkingTickets.md)
 
 <img src="images/new-york-city-parking-ticket.jpg"/>
 
@@ -43,10 +43,6 @@
 ### Databases
 
 - [Sample UML](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
 
 ---
 
