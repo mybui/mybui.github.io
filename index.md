@@ -4,17 +4,22 @@
 
 ### Data Science
 
+[Large data set analysis with dask and plotly: NYC parking ticket violations](/nycParkingTickets.md)
+
+<img src="images/new-york-city-parking-ticket.jpg"/>
+
+---
 [World airports, airlines and their routes](/airport.md)
 
 <img src="images/airport.jpg"/>
 
 ---
-[Income and Religion in the US](/pew.md)
+[Income and religion in the US](/pew.md)
 
 <img src="images/religionUs.png"/>
 
 ---
-[Sales Project: Data Cleaning and Analysis](/dressSales.md)
+[Sales project: data cleaning and analysis](/dressSales.md)
 
 <img src="images/dressSales.jpg"/>
 
@@ -35,9 +40,9 @@
 <img src="images/titanic.jpg"/>
 
 ---
-### Category Name 2
+### Databases
 
-- [Project 1 Title](http://example.com/)
+- [Sample UML](http://example.com/)
 - [Project 2 Title](http://example.com/)
 - [Project 3 Title](http://example.com/)
 - [Project 4 Title](http://example.com/)
