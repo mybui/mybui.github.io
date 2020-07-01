@@ -1,6 +1,6 @@
-### The NYC Department of Finance collects data on every parking ticket issued in NYC (~10M per year). This data is made publicly available to aid in ticket resolution and to guide policymakers. 
+## The NYC Department of Finance collects data on every parking ticket issued in NYC (~10M per year). This data is made publicly available to aid in ticket resolution and to guide policymakers. 
 
-### The data set we'll explore is in 2017. Since its size is quite large - 2.09 GB, we'll apply the concept of 'laziness' from dask. We'll also visualize our analysis with interactive plotly (not displayed here).
+## The data set we'll explore is in 2017. Since its size is quite large - 2.09 GB, we'll apply the concept of 'laziness' from dask. We'll also visualize our analysis with interactive plotly (not displayed here).
 
 
 ```python
@@ -658,6 +658,9 @@ fig.update_layout(
 fig.show()
 ```
 
+![png](images/seasonV.png)
+
+
 ### By month
 
 
@@ -703,6 +706,9 @@ fig.update_layout(xaxis_title="month",
 
 fig.show()
 ```
+
+![png](images/monthV.png)
+
 
 ### By am hour
 
@@ -834,6 +840,9 @@ fig.update_layout(xaxis_title="am hour",
 fig.show()
 ```
 
+![png](images/amV.png)
+
+
 ### By pm hour
 
 
@@ -963,6 +972,9 @@ fig.update_layout(xaxis_title="pm hour",
 
 fig.show()
 ```
+
+![png](images/pmV.png)
+
 
 ### 2. Where are tickets most commonly issued?
 
