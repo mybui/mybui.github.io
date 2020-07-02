@@ -9,7 +9,7 @@
 <img src="images/new-york-city-parking-ticket.jpg"/>
 
 ---
-[Reddit API: explore subreddit/python](/reddit-api.md)
+[Reddit API: explore subreddit/python](/)
 
 <img src="images/reddit.png"/>
 
