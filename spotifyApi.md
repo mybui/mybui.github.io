@@ -1,5 +1,7 @@
 ## Spotify is a digital music, podcast, and video streaming service that gives you access to millions of songs and other content from artists all over the world. This data set explores Spotify API of a specific artist, and her artwork.
 
+## We'll use Plotly, however the interactive effects cannot be shown here.
+
 
 ```python
 import requests
