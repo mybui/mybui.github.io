@@ -1,6 +1,6 @@
 ## The NYC Department of Finance collects data on every parking ticket issued in NYC (~10M per year). This data is made publicly available to aid in ticket resolution and to guide policymakers. 
 
-## The data set we'll explore is in 2017. Since its size is quite large - 2.09 GB, we'll apply the concept of 'laziness' from dask. We'll also visualize our analysis with interactive plotly (not displayed here).
+## The data set we'll explore is in 2017. Since its size is quite large - 2.09 GB, we'll apply the concept of 'laziness' from Dask. We'll also visualize our analysis with interactive Plotly (not displayed here).
 
 
 ```python
