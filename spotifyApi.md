@@ -1090,6 +1090,7 @@ fig.update_layout(title='Adele work types number of countries released')
 fig.show()
 ```
 
+![png](images/s-type.png)
 
 ```python
 import plotly.express as px
@@ -1099,6 +1100,8 @@ fig.update_layout(title='Adele albums and single number of countries released')
 
 fig.show()
 ```
+
+![png](images/s-track.png)
 
 ### Top Adele tracks in USA
 
@@ -1259,6 +1262,7 @@ fig.update_layout(title='Adele tracks popularity by year',
 fig.show()
 ```
 
+![png](images/s-year.png)
 
 ```python
 
@@ -1272,6 +1276,8 @@ fig.update_layout(title='Adele tracks popularity by track',
 
 fig.show()
 ```
+
+![png](images/s-song.png)
 
 ### Get a list of recommendation for one song of Adele
 
@@ -3776,6 +3782,8 @@ fig.update_layout(
 fig.show()
 ```
 
+![png](images/s-min.png)
+
 ### Visualize the song furthest to the audio features of 'When We Were Young'
 
 
@@ -3812,3 +3820,5 @@ fig.update_layout(
 
 fig.show()
 ```
+
+![png](images/s-max.png)
