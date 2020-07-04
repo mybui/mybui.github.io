@@ -4,6 +4,11 @@
 
 ### Data Science
 
+[Spotify API: Adele and her artwork](/spotifyApi.md)
+
+<img src="images/spotify.png"/>
+
+---
 [Large data set analysis with Dask and Plotly: NYC parking ticket violations](/nycParkingTickets.md)
 
 <img src="images/new-york-city-parking-ticket.jpg"/>
