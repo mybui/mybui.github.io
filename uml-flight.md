@@ -13,6 +13,8 @@
 
 #### UML diagram
 
+![png](images/r3.png)
+
 #### Relations
 - Flight (<u>fNumber</u>, <u>fDate</u>, depAirport, weekday, depTime, arrTime)
 - Aircraft (<u>aName</u>, <u>model</u>, seat)
