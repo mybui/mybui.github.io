@@ -52,7 +52,9 @@
 ---
 ### Databases
 
-- [Sample UML](http://example.com/)
+- [UML of simple flights](/uml-flight.md)
+
+<img src="images/flights.jpg"/>
 
 ---
 
