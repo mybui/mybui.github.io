@@ -1418,51 +1418,7 @@ fig.update_layout(title_text='Top 270 Barber Shops in California, CA Total Revie
 fig.show()
 ```
 
-
-<div>
-
-
-            <div id="58c264f3-8db9-45df-b2c2-64caa5aca724" class="plotly-graph-div" style="height:525px; width:100%;"></div>
-            <script type="text/javascript">
-                require(["plotly"], function(Plotly) {
-                    window.PLOTLYENV=window.PLOTLYENV || {};
-
-                if (document.getElementById("58c264f3-8db9-45df-b2c2-64caa5aca724")) {
-                    Plotly.newPlot(
-                        '58c264f3-8db9-45df-b2c2-64caa5aca724',
-                        [{"alignmentgroup": "True", "hoverlabel": {"namelength": 0}, "hovertemplate": "avg rev=4.5<br>name=%{x}<br>total rev=%{y}", "legendgroup": "4.5", "marker": {"color": "#636efa"}, "name": "4.5", "offsetgroup": "4.5", "orientation": "v", "showlegend": true, "textposition": "auto", "type": "bar", "x": ["Rick\u2019s Barbershop", "JP Kempt Barber", "Sunset Barber Service", "Gentlemen\u2019s Barber Lounge", "San Francisco Barber Shop", "Debonair Barber & Shave Parlor", "Geary Salon", "Mike\u2019s Barbershop", "Fine Line Barbershop", "Gents Barber Club", "The Barbershop", "Public Barber Salon", "Dogpatch Barber and Shave South", "Blades Co Barber Shop - Temp. CLOSED", "Attention To Detail Barber Gallery", "Of Barbers & Bears", "The Refinery Grooming Club", "Gentle Cuts", "Paulish Barbershop", "Razo\u2019s Barber Shop", "Cut To Contrast Barbershop", "Metropolitan Barber Shop", "Fresh Blades Barbershop", "Style-O-Rama Barber Shop", "Great Cuts On Geary", "Heff\u2019s Barbershop", "Mone the Barber inside Westside Cuts & Style", "Dogpatch Barber and Shave North", "The Buzz", "Golden Door Barbershop", "The Cutlery Barber Shop", "ADY Barber and Beauty Shop", "Friendly Cuts", "Just Cuts Hair Care", "The House Of Handsome Barbershop", "Cable Car Clothiers", "Virgil\u2019s Hair Cutting Studio", "Brogan and Son", "Catalano\u2019s Barber Shop", "Mystic Haircutting", "Code Salon", "Q Cuts", "Kinship Salon & Barber", "Lee Hong Hair Styling", "Zip Zap Hair", "Barberella Hair Lounge", "Details Barbershop and Grooming Lounge", "Melissa Hair Studio", "Dekko", "Ace of Fades", "Great Image Salon", "Tam\u2019s Haircuts and Shaves", "Laura\u2019s Beauty & Barber Shop", "Ruby\u2019s Cut", "Mane Attraction", "Styles Go", "B&F Barbershop", "CutRight Barber Shop", "The Tailormade Barbershop", "Giannini\u2019s Barber Shop", "Special Haircut", "Nimbus Haircuts", "Star East Hair Salon", "Barberology", "Precision Hair Design", "Every 6 Weeks", "Arthur Sebastian", "Amy\u2019s Barber Shop", "The Executive Barber Shop", "Gemini Barber Shop", "Pepe Studio", "Maneframe", "My Do Hair Design", "Bruno Hair Design", "Hair Sensation", "Neon Shade Hair Fashion", "Hair Force 1", "Silver Cut Hair Salon", "Lisa For Hair", "Ming Yuet Stylist", "Russ\u2019 Barber Shop", "Bateau Hair Salon", "Shavery Barbershop", "101 Barbershop Cut & Shave", "Lombard Beauty Salon", "San Bruno Beauty Studio", "San Bruno Beauty Studio", "Anna For Hair", "Caledonia Street Barbers", "The Pretty Pretty Collective", "Spunk Salon", "The Woodbridge", "Yan Yan Beauty Salon", "Hair On Hyde", "City Fades Barbershop", "Platinum\u2019s Barber Shop", "Barber Affiliates Barber Studio", "Fashion Cuts & Perms", "Images For Hair", "Twenty 89 Hair Design", "Broadway Barber Shop", "Honeycomb Salon", "Ling\u2019s Salon", "Ann\u2019s For Hair", "The Hair Place & More", "Shear Image Salon", "Hong Kong Art Salon", "Salon Baobao", "Bijoux Salon", "Hair Razors", "Sario\u2019s Hair Design", "Kayo Hair Salon", "Art Hair Salon", "Cowboys & Angels", "New Marbet\u2019s Hair Cuts", "Suru Barbershop"], "xaxis": "x", "y": [170, 240, 125, 179, 139, 113, 184, 51, 64, 151, 161, 947, 81, 183, 61, 14, 105, 129, 18, 49, 87, 144, 71, 34, 44, 87, 34, 58, 45, 46, 69, 68, 137, 127, 71, 98, 67, 234, 8, 146, 943, 20, 148, 94, 445, 118, 106, 11, 203, 43, 28, 19, 131, 37, 165, 7, 4, 87, 111, 35, 26, 13, 204, 8, 99, 180, 263, 6, 66, 8, 56, 58, 21, 67, 63, 75, 25, 11, 39, 133, 8, 79, 58, 4, 106, 26, 10, 52, 250, 125, 185, 39, 21, 150, 234, 1082, 15, 13, 15, 106, 49, 191, 11, 95, 9, 176, 31, 410, 52, 37, 58, 147, 23, 618, 8, 10], "yaxis": "y"}, {"alignmentgroup": "True", "hoverlabel": {"namelength": 0}, "hovertemplate": "avg rev=4.0<br>name=%{x}<br>total rev=%{y}", "legendgroup": "4.0", "marker": {"color": "#EF553B"}, "name": "4.0", "offsetgroup": "4.0", "orientation": "v", "showlegend": true, "textposition": "auto", "type": "bar", "x": ["Emilio\u2019s Barber Shop", "Daddy\u2019s Barbershop", "Barber & Gent", "Peoples Barber & Shop", "Moe\u2019s Barber and Beauty", "Dick\u2019s International", "Peoples Barber & Shop", "People\u2019s Barber & Shop", "Louies Barbershop", "Eureka Barber Shop", "The District Barbers - Soma District", "Ahmet\u2019s Barber & Hair Styling", "Westside Cuts & Style", "Harry\u2019s Hair Cuts", "Alex\u2019s Barber Shop", "San Francisco Institute of Esthetics and Cosmetology", "The District Barbers - Design District", "Studio Cutz", "Nice Cuts", "Hair Shaper", "Chicago\u2019s Barbershop", "Arcade Barbershop", "Simply Cuts", "Zhen Mei Hair Salon", "Shine Hair Styles", "S & E Style Cut", "Kim\u2019s Precision Haircuts", "Philgood Cuts", "Salon J", "Su\u2019s Hair Salon", "Fresh Cuts", "Population Salon Nopa", "Blanca\u2019s Art Of Hair", "Tye\u2019s Barber Shop", "The Barberhood", "YSA Barbershop", "Perfect Cut Hair Salon", "Cinta Aveda Institute", "Johnny\u2019s Barber Shop", "Hair of the Gods by Geno Valle", "Beauty Style Exchange", "Harry\u2019s Hair Studio", "Nepenji Japan Center Beauty Clinic", "Lisa\u2019s Hair Design", "Fresh Cuts Barbershop", "Mary\u2019s Beauty Salon & Barber Shop"], "xaxis": "x", "y": [253, 220, 50, 953, 50, 116, 245, 86, 90, 51, 120, 78, 67, 32, 30, 487, 5, 5, 171, 160, 93, 80, 100, 86, 122, 54, 56, 72, 5, 16, 15, 383, 46, 5, 14, 12, 321, 1021, 13, 24, 52, 56, 407, 153, 19, 20], "yaxis": "y"}, {"alignmentgroup": "True", "hoverlabel": {"namelength": 0}, "hovertemplate": "avg rev=5.0<br>name=%{x}<br>total rev=%{y}", "legendgroup": "5.0", "marker": {"color": "#00cc96"}, "name": "5.0", "offsetgroup": "5.0", "orientation": "v", "showlegend": true, "textposition": "auto", "type": "bar", "x": ["Locals Barbershop", "Old Mission Barbershop", "Cutthroat Barbershop", "Haight Street Barbershop", "Public Barber Salon", "Sanctuary Barber Studio", "Church Barber & Apothecary", "Black & Gold Barber Lounge", "1512 Barber Shop", "Barber Walter\u2019s Mobile Service", "30SVN", "Ingleside Barber Shop", "Francesco Black", "Healing Cuts", "Cooper Alley & Barber Lane", "Anthony\u2019s Barber Shop", "Topshelf Grooming", "SF Barber", "Gif\u2019d Crowns", "Nils Griffin Barbering", "Viks the Barbershop", "Kyle\u2019s BarberShop", "Right Style Salon", "Beau SF", "The Barber Lounge at Bryan Roberts", "Trym", "Premiere Barbershop", "Shorty Maniace At J P Kempt", "The Requisite Barber", "Annie\u2019s Barbershop", "Clipper Guru Mobile Barber", "Cloak & Dagger Salon", "Enzi Hair", "MACHETE", "David Renshaw Traditional Barber", "Raul Anthony Pro", "Lyfestyle Supply Line", "Sck Salon", "Snip Snip", "Grey Salon", "Jonathan Baker, Stylist", "Dick Troy Hair Salon", "Supreme Clientele Barber Lounge", "Monterey Hair Salon", "Vicktor Stevenson Salon", "Tony Balistreri", "Financial District Haircut By Leo", "Hair Deux", "Beeinsoa Barber & Beauty Shop", "Jane Kennedy", "Up Hair", "Gemini Hair Stylist", "Christina\u2019s Barber Studio", "Long Overdue", "David James", "The Shop", "Flo\u2019s Hair Styling", "Barber service by Kevin Panla", "Futaba Hair Salon", "Charlie\u2019s Hair Design", "Heartzilla Salon", "Geomantic Salon SF", "The Park Salon", "3 Mil Wil Hair Salon", "Jackson Place Salon", "Tony Does Your Hair", "New Looks Salon", "Patrick Evan Hair Salon", "Studio Salon", "More Than A Cut", "Nene\u2019s Beauty & Barber Supply", "EMANstyle", "Tamina", "Mark-Jason Solofa Men\u2019s Grooming", "Shear Inspiration", "Saviours Salon", "Bebo The Barber", "Mary\u2019s Beauty Salon and Barber Shop", "Stanley Weissberg at Up Hair Salon", "Salon 828", "Echos Hair Design", "Levels Barber & Shop", "R&B Barbershop", "Mister Hyde", "Revival Barber + Beauty", "Expert Cut", "United Grooming", "Frank Logan Barbershop", "Maddix Bruyn Traditional Barber", "TokyoSF", "Susan Beauty Salon", "Mz Beauty & Hair salon"], "xaxis": "x", "y": [118, 55, 15, 10, 428, 14, 45, 137, 111, 20, 18, 74, 50, 10, 47, 12, 31, 21, 3, 28, 63, 56, 30, 26, 3, 6, 1, 12, 9, 55, 2, 57, 36, 28, 1, 27, 12, 11, 13, 51, 1, 6, 58, 57, 15, 15, 56, 9, 1, 2, 51, 4, 14, 19, 163, 6, 5, 61, 3, 5, 32, 39, 101, 4, 25, 18, 44, 848, 71, 2, 2, 61, 4, 120, 6, 65, 2, 19, 8, 11, 19, 2, 2, 90, 76, 19, 25, 11, 52, 38, 7, 2], "yaxis": "y"}, {"alignmentgroup": "True", "hoverlabel": {"namelength": 0}, "hovertemplate": "avg rev=3.0<br>name=%{x}<br>total rev=%{y}", "legendgroup": "3.0", "marker": {"color": "#ab63fa"}, "name": "3.0", "offsetgroup": "3.0", "orientation": "v", "showlegend": true, "textposition": "auto", "type": "bar", "x": ["Brothers Barber Shop", "Supercuts"], "xaxis": "x", "y": [58, 155], "yaxis": "y"}, {"alignmentgroup": "True", "hoverlabel": {"namelength": 0}, "hovertemplate": "avg rev=3.5<br>name=%{x}<br>total rev=%{y}", "legendgroup": "3.5", "marker": {"color": "#FFA15A"}, "name": "3.5", "offsetgroup": "3.5", "orientation": "v", "showlegend": true, "textposition": "auto", "type": "bar", "x": ["Nice Cuts", "Talarico\u2019s Barber Shop", "Abner\u2019s Barber Shop", "J & J Hair Salon", "DZ&Y Barbershop", "Amazon Barber", "Taylor / Monroe"], "xaxis": "x", "y": [70, 13, 46, 6, 57, 26, 9], "yaxis": "y"}],
-                        {"barmode": "relative", "legend": {"title": {"text": "avg rev"}, "tracegroupgap": 0}, "margin": {"t": 60}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Top 270 Barber Shops in California, CA Total Review and Average Review"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "avg rev"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "count"}}},
-                        {"responsive": true}
-                    ).then(function(){
-
-var gd = document.getElementById('58c264f3-8db9-45df-b2c2-64caa5aca724');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })
-                };
-                });
-            </script>
-        </div>
-
+![png](images/Unknown.png)
 
 ### Overview of average reviews
 
@@ -1471,62 +1427,6 @@ if (outputEl) {{
 byAvgRev = output_toDraw.groupby('avg rev').count().drop(['link', 'total rev'], axis=1)
 byAvgRev
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>name</th>
-    </tr>
-    <tr>
-      <th>avg rev</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>3.0</th>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>3.5</th>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>4.0</th>
-      <td>46</td>
-    </tr>
-    <tr>
-      <th>4.5</th>
-      <td>116</td>
-    </tr>
-    <tr>
-      <th>5.0</th>
-      <td>92</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
 
 ```python
 import plotly.graph_objects as go
@@ -1542,50 +1442,7 @@ fig.update_layout(title_text='Top 270 Barber Shops in California, CA Average Rev
 fig.show()
 ```
 
-
-<div>
-
-
-            <div id="d541837a-efd8-4127-b278-a0b49ef86d23" class="plotly-graph-div" style="height:525px; width:100%;"></div>
-            <script type="text/javascript">
-                require(["plotly"], function(Plotly) {
-                    window.PLOTLYENV=window.PLOTLYENV || {};
-
-                if (document.getElementById("d541837a-efd8-4127-b278-a0b49ef86d23")) {
-                    Plotly.newPlot(
-                        'd541837a-efd8-4127-b278-a0b49ef86d23',
-                        [{"type": "bar", "x": [3.0, 3.5, 4.0, 4.5, 5.0], "y": [2, 7, 46, 116, 92]}],
-                        {"template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Top 270 Barber Shops in California, CA Average Review"}, "xaxis": {"title": {"text": "avg rev"}}, "yaxis": {"title": {"text": "count"}}},
-                        {"responsive": true}
-                    ).then(function(){
-
-var gd = document.getElementById('d541837a-efd8-4127-b278-a0b49ef86d23');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })
-                };
-                });
-            </script>
-        </div>
+![png](images/Unknown-2.png)
 
 
 ### A histogram displays reviews in range 4.0-5.0
@@ -1606,48 +1463,4 @@ fig.update_layout(title_text='Top 270 Barber Shops in California, CA Average Rev
 fig.show()
 ```
 
-
-<div>
-
-
-            <div id="943947e0-6b5a-474d-88df-11cc969d51dd" class="plotly-graph-div" style="height:525px; width:100%;"></div>
-            <script type="text/javascript">
-                require(["plotly"], function(Plotly) {
-                    window.PLOTLYENV=window.PLOTLYENV || {};
-
-                if (document.getElementById("943947e0-6b5a-474d-88df-11cc969d51dd")) {
-                    Plotly.newPlot(
-                        '943947e0-6b5a-474d-88df-11cc969d51dd',
-                        [{"alignmentgroup": "True", "bingroup": "x", "hoverlabel": {"namelength": 0}, "hovertemplate": "avg rev=4.5<br>total rev=%{x}<br>count=%{y}", "legendgroup": "4.5", "marker": {"color": "#636efa"}, "name": "4.5", "nbinsx": 20, "offsetgroup": "4.5", "orientation": "v", "showlegend": true, "type": "histogram", "x": [170, 240, 125, 179, 139, 113, 184, 51, 64, 151, 161, 947, 81, 183, 61, 14, 105, 129, 18, 49, 87, 144, 71, 34, 44, 87, 34, 58, 45, 46, 69, 68, 137, 127, 71, 98, 67, 234, 8, 146, 943, 20, 148, 94, 445, 118, 106, 11, 203, 43, 28, 19, 131, 37, 165, 7, 4, 87, 111, 35, 26, 13, 204, 8, 99, 180, 263, 6, 66, 8, 56, 58, 21, 67, 63, 75, 25, 11, 39, 133, 8, 79, 58, 4, 106, 26, 10, 52, 250, 125, 185, 39, 21, 150, 234, 1082, 15, 13, 15, 106, 49, 191, 11, 95, 9, 176, 31, 410, 52, 37, 58, 147, 23, 618, 8, 10], "xaxis": "x", "yaxis": "y"}, {"alignmentgroup": "True", "bingroup": "x", "hoverlabel": {"namelength": 0}, "hovertemplate": "avg rev=4.0<br>total rev=%{x}<br>count=%{y}", "legendgroup": "4.0", "marker": {"color": "#EF553B"}, "name": "4.0", "nbinsx": 20, "offsetgroup": "4.0", "orientation": "v", "showlegend": true, "type": "histogram", "x": [253, 220, 50, 953, 50, 116, 245, 86, 90, 51, 120, 78, 67, 32, 30, 487, 5, 5, 171, 160, 93, 80, 100, 86, 122, 54, 56, 72, 5, 16, 15, 383, 46, 5, 14, 12, 321, 1021, 13, 24, 52, 56, 407, 153, 19, 20], "xaxis": "x", "yaxis": "y"}, {"alignmentgroup": "True", "bingroup": "x", "hoverlabel": {"namelength": 0}, "hovertemplate": "avg rev=5.0<br>total rev=%{x}<br>count=%{y}", "legendgroup": "5.0", "marker": {"color": "#00cc96"}, "name": "5.0", "nbinsx": 20, "offsetgroup": "5.0", "orientation": "v", "showlegend": true, "type": "histogram", "x": [118, 55, 15, 10, 428, 14, 45, 137, 111, 20, 18, 74, 50, 10, 47, 12, 31, 21, 3, 28, 63, 56, 30, 26, 3, 6, 1, 12, 9, 55, 2, 57, 36, 28, 1, 27, 12, 11, 13, 51, 1, 6, 58, 57, 15, 15, 56, 9, 1, 2, 51, 4, 14, 19, 163, 6, 5, 61, 3, 5, 32, 39, 101, 4, 25, 18, 44, 848, 71, 2, 2, 61, 4, 120, 6, 65, 2, 19, 8, 11, 19, 2, 2, 90, 76, 19, 25, 11, 52, 38, 7, 2], "xaxis": "x", "yaxis": "y"}],
-                        {"barmode": "relative", "legend": {"title": {"text": "avg rev"}, "tracegroupgap": 0}, "margin": {"t": 60}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Top 270 Barber Shops in California, CA Average Review"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "avg rev"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "count"}}},
-                        {"responsive": true}
-                    ).then(function(){
-
-var gd = document.getElementById('943947e0-6b5a-474d-88df-11cc969d51dd');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })
-                };
-                });
-            </script>
-        </div>
-
+![png](images/Unknown-3.png)
