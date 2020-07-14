@@ -4,6 +4,12 @@
 
 ### Data Science
 
+[Yelp web scrapping: top barbers in California, CA](/mimi-yelp-webScrap.md)
+
+<img src="images/yelp.png"/>
+
+---
+
 [Spotify API: Adele and her artwork](/spotifyApi.md)
 
 <img src="images/spotify.png"/>
