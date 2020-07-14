@@ -991,7 +991,7 @@ for i in linkHolder:
         avgRevHolder.append(np.nan)
 ```
 
-Unable to find total reviews for:
+Unable to find average reviews for:
 - https://www.yelp.com/biz/gold-and-gifted-dc-daly-city?osq=barber
 - https://www.yelp.com/biz/the-castro-barber-lounge-san-francisco?osq=barber
 - https://www.yelp.com/biz/john-wick-barber-shop-san-francisco?osq=barber
@@ -1286,23 +1286,6 @@ output.columns = ['name', 'link', 'total rev', 'avg rev']
 output
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
