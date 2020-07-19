@@ -58,13 +58,15 @@
 ---
 ### Databases
 
-- [UML of simple flights](/uml-flight.md)
+[Database model for an university course and room registration system](/uniDB.md)
 
 <img src="images/flights.jpg"/>
 
 ---
 
+[UML of simple flights](/uml-flight.md)
 
-
-
+<img src="images/uni.jpg"/>
 ---
+
+[To be continued with other DS and ML projects]
