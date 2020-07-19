@@ -60,5 +60,6 @@ certain time.
 
 - enrolCourse (<u>stuID</u>, <u>enrID</u>, <u>exGrID</u>, <u>courseInsID</u>, <u>courseCode</u>)
 - enrolTest (<u>stuID</u>, <u>enrID</u>, <u>testID</u>, <u>courseCode</u>)
+
 - resTest (<u>courseCode</u>, <u>testID</u>, <u>resID</u>, <u>roomID</u>, <u>buildingName</u>, <u>seatForTest</u>)
 - resCourse (<u>courseInsID</u>, <u>resID</u>, <u>roomID</u>, <u>buildingName</u>, <u>seats</u>)
