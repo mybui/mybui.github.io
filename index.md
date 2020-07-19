@@ -60,13 +60,13 @@
 
 [Database model for an university course and room registration system](/uniDB.md)
 
-<img src="images/flights.jpg"/>
+<img src="images/uni.jpg"/>
 
 ---
 
 [UML of simple flights](/uml-flight.md)
 
-<img src="images/uni.jpg"/>
+<img src="images/flights.jpg"/>
 ---
 
 [To be continued with other DS and ML projects]
