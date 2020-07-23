@@ -37,7 +37,7 @@ certain time.
 
 ### UML modeling
 
-![png](images/p1.png)
+![png](images/uniDB.png)
 
 ### Relational data model
 
