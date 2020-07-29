@@ -37,11 +37,11 @@ certain time.
 
 ### UML modeling
 
-![png](images/uniDB.png)
+![png](images/p1.png)
 
 ### Relational data model
 
-#### Compostions
+#### Compositions
 - CourseInstance (<u>courseInsID</u>, courseStartDate, courseEndDate, courseCode)
 - Lecture (<u>lecID</u>, lecStartTime, lecEndTime, courseInsID)
 - ExerciseGroup (<u>exGrID</u>, groupName, limitNoStuEx, noStuRegEx, courseInsID)
