@@ -6,7 +6,7 @@
 
 [K-nearest neighbors: reccommended price for a 3-person Airbnb listing](/airbnbKNN.md)
 
-<img src="images/Abnb.png"/>
+<img src="images/abnb.png"/>
 
 
 ---
