@@ -4,7 +4,7 @@
 
 ### Machine Learning
 
-[K-nearest neighbors: reccommended price for a 3-person Airbnb listing](/airbnbKNN.md)
+[K-nearest neighbors: reccommended price for Airbnb listings](/abnbKNN.md)
 
 <img src="images/abnb.png"/>
 
