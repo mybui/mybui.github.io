@@ -1159,7 +1159,7 @@ for k, v in holder.items():
 ```
 
 
-![png](output_26_0.png)
+![png](images/output_26_0.png)
 
 
 ### Multivariate KNN
@@ -1227,7 +1227,7 @@ plt.show()
 ```
 
 
-![png](output_33_0.png)
+![png](images/output_33_0.png)
 
 
 ### Hyperparameter Tuning: k with different values [1, 20]
@@ -1292,5 +1292,5 @@ plt.show()
 ```
 
 
-![png](output_37_0.png)
+![png](images/output_37_0.png)
 
