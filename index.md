@@ -4,7 +4,12 @@
 
 ### Machine Learning
 
-[K-nearest neighbors: reccommended price for Airbnb listings](/abnbKNN.md)
+[K-nearest neighbors: reccommended prices for cars](/carKNN.md)
+
+<img src="images/car.jpg"/>
+
+---
+[K-nearest neighbors: reccommended prices for Airbnb listings](/abnbKNN.md)
 
 <img src="images/abnb.png"/>
 
@@ -19,7 +24,6 @@
 <img src="images/yelp.png"/>
 
 ---
-
 [Spotify API: Adele and her artwork](/spotifyApi.md)
 
 <img src="images/spotify.png"/>
@@ -60,7 +64,6 @@
 <img src="images/stemDegree.jpg"/>
 
 ---
-
 [Titanic gender vs. survival](/titanic.md)
 
 <img src="images/titanic.jpg"/>
@@ -76,10 +79,10 @@
 <img src="images/uni.jpg"/>
 
 ---
-
 [UML of simple flights](/uml-flight.md)
 
 <img src="images/flights.jpg"/>
+
 ---
 
 [To be continued with upcoming DS and ML projects]
