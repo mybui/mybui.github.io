@@ -2,6 +2,16 @@
 
 ---
 
+### Machine Learning
+
+[K-nearest neighbors: reccommended price for a 3-person Airbnb listing](/airbnbKNN.md)
+
+<img src="images/Abnb.png"/>
+
+
+---
+
+
 ### Data Science
 
 [Yelp web scrapping: top barbers in California, CA](/mimi-yelp-webScrap.md)
@@ -55,7 +65,10 @@
 
 <img src="images/titanic.jpg"/>
 
+
 ---
+
+
 ### Databases
 
 [Database model for an university course and room registration system](/uniDB.md)
@@ -69,4 +82,4 @@
 <img src="images/flights.jpg"/>
 ---
 
-[To be continued with other DS and ML projects]
+[To be continued with upcoming DS and ML projects]
