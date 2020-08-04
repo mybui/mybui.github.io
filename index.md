@@ -4,17 +4,17 @@
 
 ### Machine Learning
 
-[Multivariate linear regression: reccommended prices for house](/houseLR.md)
+[Multivariate linear regression: recommended prices for house](/houseLR.md)
 
 <img src="images/house.jpg"/>
 
 ---
-[K-nearest neighbors: reccommended prices for cars](/carKNN.md)
+[K-nearest neighbors: recommended prices for cars](/carKNN.md)
 
 <img src="images/car.jpg"/>
 
 ---
-[K-nearest neighbors: reccommended prices for Airbnb listings](/abnbKNN.md)
+[K-nearest neighbors: recommended prices for Airbnb listings](/abnbKNN.md)
 
 <img src="images/abnb.png"/>
 
