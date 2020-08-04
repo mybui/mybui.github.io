@@ -4,6 +4,11 @@
 
 ### Machine Learning
 
+[Multivariate linear regression: reccommended prices for house](/houseLR.md)
+
+<img src="images/house.jpg"/>
+
+---
 [K-nearest neighbors: reccommended prices for cars](/carKNN.md)
 
 <img src="images/car.jpg"/>
