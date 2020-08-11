@@ -4,7 +4,7 @@
 
 ### Machine Learning
 
-[Unsupervised ML: regression and classification of final grades](/houseLR.md)
+[Unsupervised ML: regression and classification of final grades](/studentML.md)
 
 <img src="images/student.jpg"/>
 
