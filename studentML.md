@@ -1128,7 +1128,7 @@ ax.grid(True)
 ```
 
 
-![png](output_19_0.png)
+![png](images/output_19_0.png)
 
 
 The plot of MSE shows the optimum alpha is in [70, 80].
@@ -1146,7 +1146,7 @@ plt.show()
 ```
 
 
-![png](output_21_0.png)
+![png](images/output_21_0.png)
 
 
 ### Regularization with Lasso which ignores some features completely
@@ -1186,7 +1186,7 @@ ax.grid(True)
 ```
 
 
-![png](output_25_0.png)
+![png](images/output_25_0.png)
 
 
 At alpha = 0.01, the model achieves the best performance which uses 42 features.
@@ -1208,7 +1208,7 @@ plt.show()
 ```
 
 
-![png](output_27_0.png)
+![png](images/output_27_0.png)
 
 
 
@@ -1387,7 +1387,7 @@ plt.show()
 ```
 
 
-![png](output_43_0.png)
+![png](images/output_43_0.png)
 
 
 ### 2. Binary classification for G3
