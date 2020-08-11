@@ -4,6 +4,12 @@
 
 ### Machine Learning
 
+[Unsupervised ML: regression and classification of final grades](/houseLR.md)
+
+<img src="images/student.jpg"/>
+
+---
+
 [Multivariate linear regression: recommended prices for house](/houseLR.md)
 
 <img src="images/house.jpg"/>
