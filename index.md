@@ -4,7 +4,7 @@
 
 ### 1. Machine Learning
 
-[Supervised learning: regression and classification of final grades](/studentML.md)
+[Supervised learning: regression and classification of math final grades](/studentML.md)
 
 <img src="images/student.jpg"/>
 
@@ -85,7 +85,7 @@
 
 ### 3. Databases
 
-[Database model of an university: SQL implementation](/unidb-sql.md)
+[Database model of an university: SQL implementation](/unidb-sql.sql)
 
 <img src="images/p1.png"/>
 
