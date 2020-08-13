@@ -1,8 +1,8 @@
-## Portfolio
+## Portfolio: Machine Learning, Data Science, and Data Engineering
 
 ---
 
-### Machine Learning
+### 1. Machine Learning
 
 [Supervised learning: regression and classification of final grades](/studentML.md)
 
@@ -28,7 +28,7 @@
 ---
 
 
-### Data Science
+### 2. Data Science
 
 [Yelp web scrapping: top barbers in California, CA](/mimi-yelp-webScrap.md)
 
@@ -83,7 +83,7 @@
 ---
 
 
-### Databases
+### 3. Databases
 
 [Database model of an university: SQL implementation](/unidb-sql.md)
 
