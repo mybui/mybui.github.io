@@ -85,7 +85,7 @@
 
 ### 3. Databases
 
-[Database model of an university: SQL implementation](/unidb-sql.md)
+[Database model of an university: SQL implementation](/unidb-sql.txt)
 
 <img src="images/p1.png"/>
 
