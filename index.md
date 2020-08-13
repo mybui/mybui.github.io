@@ -85,7 +85,13 @@
 
 ### Databases
 
-[Database model for an university course and room registration system](/uniDB.md)
+[Database model of an university: SQL implementation](/unidb-sql.md)
+
+<img src="images/p1.png"/>
+
+---
+
+[Database model of an university: class UML and relational models](/uniDB.md)
 
 <img src="images/uni.jpg"/>
 
