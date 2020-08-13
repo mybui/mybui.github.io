@@ -1,3 +1,5 @@
+Read more [here](./unidb-sql.txt)
+
 ### Create tables
 
 CREATE TABLE CourseInstance (
