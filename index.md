@@ -83,7 +83,13 @@
 ---
 
 
-### 3. Databases
+### 3. Data Engineering
+
+[Automate writing JSON data to CSV, and back](/e2.py)
+
+<img src="images/json.png"/>
+
+---
 
 [Database model of an university: SQL implementation](/unidb-sql.txt)
 
