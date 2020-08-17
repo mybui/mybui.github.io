@@ -93,7 +93,7 @@
 
 [Database model of an university: SQL implementation](/p2.txt)
 
-<img src="images/sql.jpg"/>
+<img src="images/sql.png"/>
 
 ---
 
