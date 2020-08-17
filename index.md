@@ -93,6 +93,8 @@
 
 [Database model of an university: SQL implementation](/p2.txt)
 
+<img src="images/sql.png"/>
+
 ---
 
 [Database model of an university: class UML and relational models](/uniDB.md)
