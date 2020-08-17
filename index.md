@@ -91,7 +91,7 @@
 
 ---
 
-[Database model of an university: SQL implementation](/uniDB-sql.md)
+[Database model of an university: SQL implementation](/unidb-sql.md)
 
 <img src="images/p1.png"/>
 
