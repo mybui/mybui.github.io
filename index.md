@@ -99,7 +99,7 @@
 
 [Database model of an university: class UML and relational models](/uniDB.md)
 
-<img src="images/p1.jpg"/>
+<img src="images/uni.jpg"/>
 
 ---
 [UML of simple flights](/uml-flight.md)
