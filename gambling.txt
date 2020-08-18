@@ -1,0 +1,176 @@
+from bs4 import BeautifulSoup
+import urllib
+import re
+import pandas as pd
+import numpy as np
+
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import GridSearchCV
+from sklearn.pipeline import Pipeline
+from sklearn.svm import SVC
+
+
+# The dictionary is available in 'gambling_dictionary.csv'.
+# It will be read below, so there is no need to produce it again.
+
+
+# Ucomment this part to produce a dictionary again, if needed.
+# Please note that it takes a while, as there are many urls to scrape.
+
+
+'''
+data = pd.read_csv('data_gambling.csv', sep=',')
+
+def getText(df):
+    page_text = []
+    headers = {'User-Agent': 
+               'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.3'}
+    for i in df['url']:
+        try:
+            html_page = urllib.request.urlopen(urllib.request.Request(i, headers=headers))
+            soup = BeautifulSoup(html_page, 'html.parser')
+            text = soup.get_text()
+            page_text += [re.findall(r'[A-Za-z].[A-Za-z]*', str(text))]
+        except Exception as e:
+            page_text += [np.nan]
+            
+    clean_text = []
+    for text in page_text:
+        holder = []
+        try:
+            for word in text:
+                # lowercase words only
+                word = word.lower()
+                # remove special characters
+                if (word.isalpha() == False):
+                    text.remove(word)
+                else:
+                    # more than 3 character words only
+                    if len(word) >= 3:
+                        holder.append(word)
+        except Exception as e:
+            pass
+        
+        clean_text.append(holder)
+        
+    return clean_text
+
+
+# keep only scrappable urls
+clean_text = getText(data)
+data['clean_text'] = clean_text
+data = data[data['clean_text'].apply(lambda x: len(x)) != 0]
+
+
+def createDictionary(df):
+    unique_words = []
+    checkpoints = []
+
+    for title in df['clean_text']:
+        for word in title:
+            if word not in checkpoints:
+                checkpoints.append(word)
+            elif word in checkpoints and word not in unique_words:
+                unique_words.append(word)
+
+    dictionary = pd.DataFrame(0, index=np.arange(len(df['clean_text'])), columns=unique_words)
+    
+    for index, title in enumerate(list(df['clean_text'].values)):
+        for word in title:
+            if word in unique_words:
+                dictionary.iloc[index][word] += 1
+    
+    return dictionary
+
+
+dictionary = createDictionary(data)
+
+dictionary.to_csv('gambling_dictionary.csv', sep=',')
+'''
+
+
+# read the dictionary already produced
+data = pd.read_csv('clean_gambling_data.csv', sep=',', index_col='Unnamed: 0')
+dictionary = pd.read_csv('gambling_dictionary.csv', sep=',', index_col='Unnamed: 0')
+
+
+X_train, X_test, y_train, y_test = train_test_split(dictionary, data['gambling'], test_size=0.25, random_state=42)
+
+# model selection and hyperparameter tuning
+# uncomment if wished to try again
+# note that it takes some time
+'''
+pipe = Pipeline([('preprocessing', StandardScaler()), ('classifier', SVC())])
+param_grid = [
+    {'classifier': [SVC()], 'preprocessing': [StandardScaler(), None],
+     'classifier__gamma': [0.001, 0.01, 0.1, 1, 10, 100],
+     'classifier__C': [0.001, 0.01, 0.1, 1, 10, 100]},
+    {'classifier': [RandomForestClassifier(n_estimators=100)],
+     'preprocessing': [None], 'classifier__max_features': [1, 2, 3]},
+    {'classifier': [LogisticRegression(max_iter=100000)],
+     'preprocessing': [None], 'classifier__C': [0.001, 0.01, 0.1, 1, 10, 100]}
+    ]
+
+grid = GridSearchCV(pipe, param_grid, cv=5)
+grid.fit(X_train, y_train)
+'''
+
+
+# train and test data with SVC model
+from sklearn.metrics import confusion_matrix
+pipe = Pipeline([('preprocessing', StandardScaler()), ('classifier', SVC(C=100, gamma=0.001))])
+pipe.fit(X_train, y_train)
+print('confusion matrix: ')
+print(confusion_matrix(y_test, pipe.predict(X_test)))
+print('\n'
+
+
+# predict url
+def predictUrl ():
+    print('please input a valid url: ')
+    url = str(input())
+    headers = {'User-Agent': 
+           'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.3'}
+    string_text = []
+
+    try:
+        html_page = urllib.request.urlopen(urllib.request.Request(url, headers=headers))
+        soup = BeautifulSoup(html_page, 'html.parser')
+        print('Warning: this should not take very long. If, unfortunately, it does, please stop and try again. \n')
+        text = soup.get_text()
+        string_text += re.findall(r'[A-Za-z].[A-Za-z]*', text)
+    except Exception as e:
+        pass
+    
+    if len(string_text) == 0:
+        print('Unable to scrape this url, please run this file again, and try another url')
+        
+    string_text = [i.lower() for i in string_text if i.isalpha()]
+    
+    print('Finished scrapping the url, starting prediction \n')
+    
+    string_X = []
+    for i in dictionary.columns:
+        if i not in string_text:
+            string_X.append(0)
+        else:
+            string_X.append(1)
+    
+    string_X = np.array(string_X).reshape(1, -1)
+    result = pipe.predict(string_X)[0]
+    
+    if result == 0:
+        print('Result: this is not a gambling site. \n')
+    else:
+        print('Result: this is a gamling site \n')
+        
+    print('Thank you for time.')
+    print('If incorrect, a more intensive and precise dictionary should be used.')
+
+
+# user input
+predictUrl()
+
