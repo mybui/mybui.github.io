@@ -4,7 +4,7 @@
 
 ### 1. Machine Learning
 
-[Support Vector Machine for graduation and admission data](/svm.md)
+[Support Vector Machine: classification of graduation and regression of admission data](/svm.md)
 
 <img src="images/uni.jpg"/>
 
