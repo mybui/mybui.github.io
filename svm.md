@@ -1011,7 +1011,7 @@ plt.show()
 ```
 
 
-![png](output_17_0.png)
+![png](images/output_17_0.png)
 
 
 
