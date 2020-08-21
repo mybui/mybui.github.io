@@ -4,6 +4,12 @@
 
 ### 1. Machine Learning
 
+[Support Vector Machine for graduation and admission data](/svm.md)
+
+<img src="images/uni.jpg"/>
+
+---
+
 [Supervised learning: regression and classification of math final grades](/studentML.md)
 
 <img src="images/student.jpg"/>
@@ -99,7 +105,7 @@
 
 [Database model of an university: class UML and relational models](/uniDB.md)
 
-<img src="images/uni.jpg"/>
+<img src="images/p1.png"/>
 
 ---
 [UML of simple flights](/uml-flight.md)
