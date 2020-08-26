@@ -1,0 +1,264 @@
+-- Search for the courses which are arranged in a certain time interval 
+-- e.g. 2019-01-01 - 2019-12-01
+SELECT Course.courseCode,
+       Course.courseName,
+       Course.courseCredit,
+       CourseInstance.courseStartDate,
+       CourseInstance.courseEndDate
+  FROM Course
+       LEFT JOIN
+       CourseInstance ON Course.courseCode = CourseInstance.courseCode
+ WHERE CourseInstance.courseStartDate > '2019-01-01' AND 
+       CourseInstance.courseStartDate < '2019-12-01';
+
+
+-- Find out, which exams a certain course has during a certain time interval 
+-- e.g. Caculus '2019-01-01' - '2020-05-01'
+SELECT Course.courseCode,
+       Course.courseName,
+       Test.testID,
+       Test.testStartTime
+  FROM Course
+       LEFT JOIN
+       CourseInstance ON Course.courseCode = CourseInstance.courseCode
+       LEFT JOIN
+       Test ON Course.courseCode = Test.courseCode
+ WHERE Test.testStartTime > '2019-01-01' AND 
+       Test.testEndTime < '2020-05-01' AND 
+       Course.courseName LIKE '%calculus%';
+
+
+-- Find out, when a certain course has been arranged or when it will be arranged 
+-- e.g. probability
+SELECT Course.courseCode,
+       Course.courseName,
+       CourseInstance.courseStartDate,
+       CourseInstance.courseEndDate
+  FROM Course
+       LEFT JOIN
+       CourseInstance ON Course.courseCode = CourseInstance.courseCode
+ WHERE Course.courseName LIKE '%probability%';
+
+
+-- Find the lectures belonging to a certain course instance 
+-- e.g. 'calculus'
+SELECT Course.courseCode,
+       CourseInstance.courseInsID,
+       Course.courseName,
+       Lecture.lecID,
+       Lecture.lecStartTime
+  FROM Course
+       LEFT JOIN
+       CourseInstance ON Course.courseCode = CourseInstance.courseCode
+       LEFT JOIN
+       Lecture ON CourseInstance.courseInsID = Lecture.courseInsID
+ WHERE Lecture.lecStartTime > '2019-01-01' AND 
+       Lecture.lecEndTime < '2020-01-01' AND
+       Course.courseName LIKE '%calculus%';
+
+
+-- Find the exercise groups belonging to a certain course instance and find out, 
+-- when and where a certain exercise group meets 
+-- e.g. 'calculus'
+SELECT Course.courseCode,
+       Course.courseName,
+       ExerciseGroup.exGrID,
+       Reservation.resStartTime,
+       Reservation.resEndTime,
+       Reservation.roomID,
+       Building.buildingName,
+       Building.buildingAdd
+  FROM Course
+       LEFT JOIN
+       CourseInstance ON Course.courseCode = CourseInstance.courseCode
+       LEFT JOIN
+       ExerciseGroup ON CourseInstance.courseInsID = ExerciseGroup.courseInsID
+       LEFT JOIN
+       Reservation ON ExerciseGroup.exGrID = Reservation.exGrID
+       LEFT JOIN
+       Room ON Reservation.roomID = Room.roomID
+       LEFT JOIN
+       Building ON Building.buildingID = Room.buildingID
+ WHERE Reservation.resStartTime < '2020-12-01' AND 
+       Course.courseName LIKE '%calculus%';
+       
+
+-- Find a room which has at least a certain number of seats and which is free for reservation at a certain time 
+-- e.g. a room is not occupied '2018-09-15 14:15:00' - '2018-09-15 16:00:00' which has at least 30 seats
+SELECT Room.roomID,
+       Building.buildingName,
+       Building.buildingAdd,
+       Room.seats
+  FROM Room
+       LEFT JOIN
+       Building ON Room.buildingID = Building.buildingID
+ WHERE Room.seats >= 30 AND 
+       Room.roomID NOT IN (
+           SELECT Reservation.roomID
+             FROM Reservation
+            WHERE (Reservation.resStartTime BETWEEN '2018-09-15 14:15:00' AND '2018-09-15 16:00:00' OR 
+                   Reservation.resEndTime BETWEEN '2018-09-15 14:15:00' AND '2018-09-15 16:00:00' OR 
+                   (Reservation.resStartTime < '2018-09-15 14:15:00' AND 
+                    Reservation.resEndTime > '2018-09-15 16:00:00') OR 
+                   (Reservation.resStartTime > '2018-09-15 14:15:00' AND 
+                    Reservation.resEndTime < '2018-09-15 16:00:00')) 
+       );
+
+
+-- Find out for which purpose a certain room is reserved at a certain time
+SELECT Room.roomID,
+       Building.buildingName,
+       Building.buildingAdd,
+       Reservation.resStartTime,
+       Reservation.resEndTime,
+       Reservation.resType as resPurpose
+  FROM Room
+       LEFT JOIN
+       Building ON Room.buildingID = Building.buildingID
+       LEFT JOIN
+       Reservation ON Room.roomID = Reservation.roomID
+ WHERE (Reservation.resStartTime BETWEEN '2018-09-15 14:15:00' AND '2018-09-15 16:00:00' OR 
+        Reservation.resEndTime BETWEEN '2018-09-15 14:15:00' AND '2018-09-15 16:00:00' OR 
+        (Reservation.resStartTime < '2018-09-15 14:15:00' AND 
+         Reservation.resEndTime > '2018-09-15 16:00:00') OR 
+        (Reservation.resStartTime > '2018-09-15 14:15:00' AND 
+         Reservation.resEndTime < '2018-09-15 16:00:00') );
+
+
+-- List all students who have enrolled for a certain course instance, exercise group or exam
+-- e.g. course 'MS-A0111'
+SELECT Enrollment.stuID,
+       Student.name,
+       Course.courseCode,
+       Course.courseName,
+       CourseInstance.courseStartDate,
+       CourseInstance.courseEndDate
+  FROM Enrollment
+       LEFT JOIN
+       Student ON Enrollment.stuID = Student.stuID
+       LEFT JOIN
+       ExerciseGroup ON Enrollment.exGrID = ExerciseGroup.exGrID
+       LEFT JOIN
+       CourseInstance ON ExerciseGroup.courseInsID = CourseInstance.courseInsID
+       LEFT JOIN
+       Course ON CourseInstance.courseCode = Course.courseCode
+ WHERE Course.courseCode LIKE 'MS-A0111';
+
+
+-- Find out which exercise groups at a certain course instance are not full yet
+SELECT Course.courseCode,
+       Course.courseName,
+       ExerciseGroup.exGrID,
+       (ExerciseGroup.limitNoStuEx - ExerciseGroup.noStuRegEx) AS availability
+  FROM ExerciseGroup
+       JOIN
+       CourseInstance ON ExerciseGroup.courseInsID = CourseInstance.courseInsID
+       JOIN
+       Course ON CourseInstance.courseCode = Course.courseCode
+ WHERE ExerciseGroup.limitNoStuEx > ExerciseGroup.noStuRegEx;
+
+
+-- Find out if there is any test that overlaps any exercise group
+SELECT Test.testID,
+       Course.courseName,
+       Test.testStartTime,
+       Test.testEndTime,
+       ExerciseInstance.exGrID,
+       ExerciseInstance.exStartTime,
+       ExerciseInstance.exEndTime
+  FROM Test
+       LEFT JOIN
+       Course ON Course.courseCode = Test.courseCode
+       LEFT JOIN
+       CourseInstance ON Test.courseCode = CourseInstance.courseCode
+       LEFT JOIN
+       ExerciseGroup ON CourseInstance.courseInsID = ExerciseGroup.courseInsID
+       LEFT JOIN
+       ExerciseInstance ON ExerciseGroup.exGrID = ExerciseInstance.exGrID
+ WHERE (Test.testStartTime BETWEEN ExerciseInstance.exStartTime AND ExerciseInstance.exEndTime OR 
+        Test.testEndTime BETWEEN ExerciseInstance.exStartTime AND ExerciseInstance.exEndTime OR 
+        (Test.testStartTime < ExerciseInstance.exStartTime AND 
+         Test.testEndTime > ExerciseInstance.exEndTime) OR 
+        (Test.testStartTime > ExerciseInstance.exStartTime AND 
+         Test.testEndTime < ExerciseInstance.exEndTime) );
+         
+
+-- At the rooms which already have some tests, find out how many seats are left 
+-- (for other to also register their tests at the same time in the same room)
+SELECT Reservation.resStartTime,
+       Reservation.resEndTime,
+       Reservation.testID,
+       Reservation.roomID,
+       Room.seatsForTest - Reservation.noSeatTestBooked AS availability
+  FROM Reservation
+  LEFT JOIN Room
+  ON Reservation.roomID = Room.roomID
+  WHERE Reservation.resType = 'test';
+
+
+-- For a particular test, find out what are the rooms that can fit it
+-- e.g. MS-A0111-T1 with 29 students registered
+SELECT Room.roomID,
+       Building.buildingName,
+       Building.buildingAdd,
+       Room.seatsForTest
+  FROM Room
+  LEFT JOIN 
+  Building ON Room.buildingID = Building.buildingID
+ WHERE Room.seatsForTest >= (
+                                SELECT Test.noStuRegTest
+                                  FROM Test
+                                 WHERE Test.testID = 'MS-A0111-2-T1'
+                            );
+
+
+-- For a particular course instance, how many exercise sessions each different exercise groups have
+-- e.g. MS-A0111-1
+SELECT CourseInstance.courseInsID,
+       Course.courseName,
+       ExerciseGroup.groupName,
+       COUNT(ExerciseInstance.exInsID) AS noExSessions
+  FROM CourseInstance
+       LEFT JOIN
+       ExerciseGroup ON CourseInstance.courseInsID = ExerciseGroup.courseInsID
+       LEFT JOIN
+       ExerciseInstance ON ExerciseGroup.exGrID = ExerciseInstance.exGrID
+       LEFT JOIN
+       Course ON Course.courseCode = CourseInstance.courseCode
+ WHERE CourseInstance.courseInsID = 'MS-A0111-1'
+ GROUP BY ExerciseGroup.exGrID;
+
+
+-- What is the most frequently occupied room?
+SELECT Reservation.roomID,
+       Building.buildingName,
+       Building.buildingAdd,
+       MAX(roomFrequency) AS maxRoomFrequency
+  FROM (
+           SELECT Reservation.roomID,
+                  Building.buildingName,
+                  Building.buildingAdd,
+                  COUNT(Reservation.resID) AS roomFrequency
+             FROM Reservation
+                  LEFT JOIN
+                  Room ON Reservation.roomID = Room.roomID
+                  LEFT JOIN
+                  Building ON Room.buildingID = Building.buildingID
+            GROUP BY Reservation.roomID
+       );
+
+
+-- Find the most populated course instance, and list its most populated exercise group
+SELECT CourseInstance.courseInsID,
+       Course.courseName,
+       CourseInstance.courseStartDate,
+       CourseInstance.courseEndDate,
+       MAX(ExerciseGroup.noStuRegEx) AS maxStuReg,
+       ExerciseGroup.groupName
+  FROM CourseInstance
+       LEFT JOIN
+       ExerciseGroup ON CourseInstance.courseInsID = ExerciseGroup.courseInsID
+       LEFT JOIN
+       Course ON CourseInstance.courseCode = Course.courseCode;
+
+
