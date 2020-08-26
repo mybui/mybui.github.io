@@ -97,7 +97,13 @@
 
 ---
 
-[Database model of an university: SQL implementation](/p2.txt)
+[Database model of an university: queries](/uniDB-queries.txt)
+
+<img src="images/sql.png"/>
+
+---
+
+[Database model of an university: SQL DB setup](/uniDB-setup.txt)
 
 <img src="images/sql.png"/>
 
