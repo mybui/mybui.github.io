@@ -37,7 +37,6 @@ certain time.
 
 ### UML modeling
 
-![png](images/p1.png)
 
 ### Relational data model
 
@@ -52,7 +51,7 @@ certain time.
 
 
 - Building (<u>buildingName</u>, buildingAdd)
-- Room (<u>roomID</u>, seats, seatsForTest, noSeatTestBooked, equipName, equipQuantity, buildingName)
+- Room (<u>roomID</u>, seats, seatsForTest, equipName, equipQuantity, buildingName)
 
 
 #### Hierarchy
@@ -64,19 +63,18 @@ certain time.
 
 #### Combined relations with associations
 - Enrollment (<u>enrID</u>, enrTime, enrType, stuID, exGrID, testID) combined with associations 'hasEnrollment, enrolCourse, enrolTest'
-- Reservation (<u>resID</u>, resStartTime, resEndTime, resType, roomID, exGrID, lecID, testID) combined with associations 'hasReservation, exerciseReservation, lectureReservation, testReservation'
+- Reservation (<u>resID</u>, resStartTime, resEndTime, resType, roomID, exGrID, lecID, testID, noSeatTestBooked) combined with associations 'hasReservation, exerciseReservation, lectureReservation, testReservation'
 
 ### SQL implementation
 
 #### Check constraints
 - ExerciseGroup: noStuRegEx <= limitNoStuEx
-- Room: noSeatTestBooked <= seatsForTest
 
 #### Triggers
 - Enrollment: after insert, increment noStuRegEx
 - Reservation: 
     1. Before insert
-        + Check if new time interval overlaps with any current time interval and if new type is not test
-        + Check if new type is exercise and the room chosen can contain its noStuRegEx (noStuRegEx <= seats)
+        + Check if new time interval overlaps with any current time interval, and if new type is not test
+        + Check if new type is exercise, and the room chosen can contain its noStuRegEx (noStuRegEx <= seats)
     2. After insert
-        + Check if new type is test and increment noSeatTestBooked
+        + Check if new type is test, and the room chose can contain this test (including all tests already registered at the same time in the same room)
