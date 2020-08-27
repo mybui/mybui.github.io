@@ -36,7 +36,7 @@ certain time.
 - Find out which exercise groups at a certain course instance are not full yet.
 
 ### UML modeling
-
+![png](images/p1.png)
 
 ### Relational data model
 
