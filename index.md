@@ -4,6 +4,12 @@
 
 ### 1. Machine Learning
 
+[Ensemble Learning with RandomForest and XGBoost: speed dating data set](/DT&EL.md)
+
+<img src="images/dating.jpg"/>
+
+---
+
 [Support Vector Machine: classification of graduation and regression of admission data](/svm.md)
 
 <img src="images/uni.jpg"/>
