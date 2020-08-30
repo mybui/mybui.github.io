@@ -4,7 +4,7 @@
 
 ### 1. Machine Learning
 
-[Ensemble Learning with RandomForest and XGBoost: speed dating data set](/DT&EL.md)
+[Ensemble Learning with RandomForest and XGBoost: speed dating data set](/EL.md)
 
 <img src="images/dating.jpg"/>
 
