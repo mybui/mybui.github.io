@@ -377,7 +377,7 @@ plt.show()
 ```
 
 
-![png](output_7_0.png)
+![png](images/output_7_0.png)
 
 
 ### 1.1. PCA
@@ -431,7 +431,7 @@ plt.show()
 
 
 
-![png](output_13_1.png)
+![png](images/output_13_1.png)
 
 
 
@@ -446,7 +446,7 @@ plt.show()
 
 
 
-![png](output_14_1.png)
+![png](images/output_14_1.png)
 
 
 
@@ -493,7 +493,7 @@ plt.show()
 ```
 
 
-![png](output_16_0.png)
+![png](images/output_16_0.png)
 
 
 ### 1.2. LDA
@@ -508,7 +508,7 @@ plt.show()
 ```
 
 
-![png](output_18_0.png)
+![png](images/output_18_0.png)
 
 
 ### 1.3. LLE
@@ -528,7 +528,7 @@ plt.show()
 ```
 
 
-![png](output_20_0.png)
+![png](images/output_20_0.png)
 
 
 ### 1.4. MDS
@@ -547,7 +547,7 @@ plt.show()
 ```
 
 
-![png](output_22_0.png)
+![png](images/output_22_0.png)
 
 
 ### 1.5. Isomap
@@ -566,7 +566,7 @@ plt.show()
 ```
 
 
-![png](output_24_0.png)
+![png](images/output_24_0.png)
 
 
 ### 1.6. TSNE
@@ -585,7 +585,7 @@ plt.show()
 ```
 
 
-![png](output_26_0.png)
+![png](images/output_26_0.png)
 
 
 ### TSNS gives the clearest distinction between classes.
@@ -606,7 +606,7 @@ plt.show()
 ```
 
 
-![png](output_28_0.png)
+![png](images/output_28_0.png)
 
 
 ### 1.8. TSNE with 'poly' KPCA
@@ -623,7 +623,7 @@ plt.show()
 ```
 
 
-![png](output_30_0.png)
+![png](images/output_30_0.png)
 
 
 ### 1.9. TSNE with 'sigmoid' PCA
@@ -640,7 +640,7 @@ plt.show()
 ```
 
 
-![png](output_32_0.png)
+![png](images/output_32_0.png)
 
 
 ### 2.1. Classification with PCA and TNSE
