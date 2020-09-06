@@ -10,6 +10,12 @@
 
 ---
 
+[Dimensionality Reduction: 1000 fashion MNIST](/dr.md)
+
+<img src="images/output_26_0.png"/>
+
+---
+
 [Support Vector Machine: classification of graduation and regression of admission data](/svm.md)
 
 <img src="images/uni.jpg"/>
