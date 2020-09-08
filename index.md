@@ -107,7 +107,7 @@
 
 ---
 
-[Database model of an university: class UML and relational models](/theaterUML.md)
+[Theaters and ticket systems UML](/theaterUML.md)
 
 <img src="images/theaterUML.png"/>
 
