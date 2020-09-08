@@ -103,6 +103,10 @@
 
 ### 3. Data Engineering
 
+[Data Pipeline with Python and SQLite for research analysis: final results as a report (sample only)](/sample_covidRep.pdf)
+
+---
+
 [Database model of an university: class UML and relational models](/theaterUML.md)
 
 <img src="images/theaterUML.png"/>
