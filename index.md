@@ -1,4 +1,4 @@
-## Portfolio: Machine Learning, Data Science, and Data Engineering
+## Mimi's Portfolio in Machine Learning, Data Science, and Data Engineering
 
 ---
 
