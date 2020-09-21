@@ -32,6 +32,8 @@
 
 <!---<img src="images/house.jpg"/>--->
 
+
+---
 ---
 
 
@@ -39,54 +41,55 @@
 
 [Yelp web scrapping: top barbers in California, CA](/mimi-yelp-webScrap.md)
 
-<img src="images/yelp.png"/>
+<!---<img src="images/yelp.png"/>--->
 
 ---
 [Spotify API: Adele and her artwork](/spotifyApi.md)
 
-<img src="images/spotify.png"/>
+<!---<img src="images/spotify.png"/>--->
 
 ---
 [Large data set analysis with Dask and Plotly: NYC parking ticket violations](/nycParkingTickets.md)
 
-<img src="images/new-york-city-parking-ticket.jpg"/>
+<!---<img src="images/new-york-city-parking-ticket.jpg"/>--->
 
 ---
 [Reddit API: Subreddit Python](/reddit-api.md)
 
-<img src="images/reddit.png"/>
+<!---<img src="images/reddit.png"/>--->
 
 ---
 [World airports, airlines and their routes](/airport.md)
 
-<img src="images/airport.jpg"/>
+<!---<img src="images/airport.jpg"/>--->
 
 ---
 [Income and religion in the US](/pew.md)
 
-<img src="images/religionUs.png"/>
+<!---<img src="images/religionUs.png"/>--->
 
 ---
 [Sales project: data cleaning and analysis](/dressSales.md)
 
-<img src="images/dressSales.jpg"/>
+<!---<img src="images/dressSales.jpg"/>--->
 
 ---
 [Most popular posts and golden hour of publishing comments](/hackerNews.md)
 
-<img src="images/hackerNews.jpg"/>
+<!---<img src="images/hackerNews.jpg"/>--->
 
 ---
 [Gender gap STEM degrees](/stemDegree.md)
 
-<img src="images/stemDegree.jpg"/>
+<!---<img src="images/stemDegree.jpg"/>--->
 
 ---
 [Titanic gender vs. survival](/titanic.md)
 
-<img src="images/titanic.jpg"/>
+<!---<img src="images/titanic.jpg"/>--->
 
 
+---
 ---
 
 
@@ -98,36 +101,36 @@
 
 [Theaters and ticket systems UML](/theaterUML.md)
 
-<img src="images/theaterUML.png"/>
+<!---<img src="images/theaterUML.png"/>--->
 
 ---
 
 [Automate writing JSON data to CSV, and back](/jsonCsv.md)
 
-<img src="images/json.png"/>
+<!---<img src="images/json.png"/>--->
 
 ---
 
 [Database model of an university: queries](/uniDB-queries.txt)
 
-<img src="images/sql.png"/>
+<!---<img src="images/sql.png"/>--->
 
 ---
 
 [Database model of an university: SQL DB setup](/uniDB-setup.txt)
 
-<img src="images/sql.png"/>
+<!---<img src="images/sql.png"/>--->
 
 ---
 
 [Database model of an university: class UML and relational models](/uniDB.md)
 
-<img src="images/p1.png"/>
+<!---<img src="images/p1.png"/>--->
 
 ---
 [UML of simple flights](/uml-flight.md)
 
-<img src="images/flights.jpg"/>
+<!---<img src="images/flights.jpg"/>--->
 
 ---
 
