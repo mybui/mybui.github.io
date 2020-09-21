@@ -39,6 +39,9 @@
 
 ### 2. Data Science
 
+[Spark API with DataFrame and SQL: book reviews and user data](/mimi-yelp-webScrap.md)
+
+---
 [Yelp web scrapping: top barbers in California, CA](/mimi-yelp-webScrap.md)
 
 <!---<img src="images/yelp.png"/>--->
