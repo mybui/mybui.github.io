@@ -6,31 +6,31 @@
 
 [Ensemble Learning with RandomForest and XGBoost: speed dating data set](/EL.md)
 
-<!---<img src="images/dating.jpg"/>
+<!---<img src="images/dating.jpg"/>--->
 
 ---
 
 [Dimensionality Reduction: 1000 fashion MNIST](/dr.md)
 
-<!---<img src="images/output_26_0.png"/>
+<!---<img src="images/output_26_0.png"/>--->
 
 ---
 
 [Support Vector Machine: classification of graduation and regression of admission data](/svm.md)
 
-<!---<img src="images/uni.jpg"/>
+<!---<img src="images/uni.jpg"/>--->
 
 ---
 
 [Supervised learning: regression and classification of math final grades](/studentML.md)
 
-<!---<img src="images/student.jpg"/>
+<!---<img src="images/student.jpg"/>--->
 
 ---
 
 [Multivariate linear regression: recommended prices for house](/houseLR.md)
 
-<!---<img src="images/house.jpg"/>
+<!---<img src="images/house.jpg"/>--->
 
 ---
 
