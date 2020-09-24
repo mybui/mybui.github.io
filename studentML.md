@@ -1,5 +1,11 @@
+# Supervised learning: regression and classification of math final grades
+
+## Goals
+#### 1. Regression - final grade: MSE = 6.1558
+#### 2. Binary classification – pass if ≥ 10 else fail: 9 mis-classified points
+#### 3. 5-Level classification – based on the Erasmus grading: 7 mis-classified points
+
 ## Attributes
-### Demographic
 - school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira) 
 - sex - student's sex (binary: 'F' - female or 'M' - male) 
 - age - student's age (numeric: from 15 to 22) 
@@ -30,13 +36,11 @@
 - Walc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high) 
 - health - current health status (numeric: from 1 - very bad to 5 - very good) 
 - absences - number of school absences (numeric: from 0 to 93) 
-
-### School performance
 - G1 - first period grade (numeric: from 0 to 20) 
 - G2 - second period grade (numeric: from 0 to 20) 
 - G3 - final grade (numeric: from 0 to 20, output target)
 
-## ML task: 
+## ML tasks
 1. Regression - final grade G3
 2. Binary classification – pass if G3 ≥ 10 else fail
 3. 5-Level classification – based on the Erasmus grade conversion system
