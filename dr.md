@@ -1,8 +1,8 @@
 # Dimensionality Reduction: 1000 fashion MNIST
 
 ## Goals
-### 1. Try out diffreent Dimensionality Reduction techniques, and conclude the best one bz visualization: TNSE
-### 2. Dimensionality Reduction for Pre-processing: not recommended 
+### 1. Try out different Dimensionality Reduction (DR) techniques, and choose the best: TNSE
+### 2. DR for Pre-processing: not very favourable 
 
 ## Data set description
 Source: https://github.com/zalandoresearch/fashion-mnist
