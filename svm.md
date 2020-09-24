@@ -1,6 +1,8 @@
-## ML tasks using SVM: 
-### 1. Classification: job placement status after graduation
-### 2. Regression: chance of admission
+# Support Vector Machine: classification of graduation and regression of admission data
+
+## Goals 
+### 1. Classification - job placement status after graduation: score = 0.8703
+### 2. Regression - chance of admission: MSE = 0.0042
 
 
 ```python
