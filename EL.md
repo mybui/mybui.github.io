@@ -2,11 +2,9 @@
 
 ## Goals
 ### 1. Classification: matched or unmatched date
-- Accuracy = 0.85618
+#### Accuracy = 0.85618
 ### 2. Regression: how much a participant likes his/her date
-- RMSE = 0.70373
-
---
+#### RMSE = 0.70373
 
 ## Data set description
 - Author: Ray Fisman and Sheena Iyengar
