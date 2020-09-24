@@ -1,10 +1,8 @@
 # Ensemble Learning with RandomForest and XGBoost: speed dating dataset
 
 ## Goals
-### 1. Classification: matched or unmatched date
-#### Accuracy = 0.85618
-### 2. Regression: how much a participant likes his/her date
-#### RMSE = 0.70373
+### 1. Classification matched or unmatched date: accuracy = 0.85618
+### 2. Regression how much a participant likes his/her date: RMSE = 0.70373
 
 ## Data set description
 - Author: Ray Fisman and Sheena Iyengar
@@ -65,7 +63,7 @@ This data was gathered from participants in experimental speed dating events fro
  * decision_o: Decision of partner at night of event.  
  * match: Match (yes/no)
 
-## ML tasks using Ensemble Learning: 
+## ML tasks
 ### 1. Classification: matched or unmatched
 ### 2. Regression: how much a participant likes his/her date
 
