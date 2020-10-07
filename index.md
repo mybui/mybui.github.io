@@ -83,10 +83,6 @@
 
 [Data Pipeline with Python and SQLite for research analysis: final results as a report (sample only)](/sample_covidRep.pdf)
 
-[Theaters and ticket systems UML](/theaterUML.md)
-
-<!---<img src="images/theaterUML.png"/>--->
-
 [Automate writing JSON data to CSV, and back](/jsonCsv.md)
 
 <!---<img src="images/json.png"/>--->
@@ -101,12 +97,7 @@
 
 [Database model of an university: class UML and relational models](/uniDB.md)
 
-<!---<img src="images/p1.png"/>--->
-
-[UML of simple flights](/uml-flight.md)
-
-<!---<img src="images/flights.jpg"/>--->
-
+[Theaters and ticket systems UML](/theaterUML.md)
 
 ---
 
