@@ -1,4 +1,4 @@
-# Collaborative filtering recommender system with Amazon products
+# Collaborative filtering recommender system with PySpark ALS: Amazon products
 
 ## Goals
 ### Recommend top 5 products for an user: RMSE = 1.22
