@@ -30,6 +30,8 @@
 
 ### 2. Data Science
 
+[Collaborative filtering recommender system: Amazon products](/rs.md)
+
 [Spark API with DataFrame and SQL: book reviews and user data](/bookRev-sparkAPI.md)
 
 
