@@ -4,6 +4,8 @@
 
 ### 1. Machine Learning
 
+[Collaborative filtering recommender system with PySpark: Amazon products](/rs.md)
+
 [Ensemble Learning with RandomForest and XGBoost: speed dating data set](/EL.md)
 
 <!---<img src="images/dating.jpg"/>--->
@@ -30,9 +32,7 @@
 
 ### 2. Data Science
 
-[Collaborative filtering recommender system with PySpark: Amazon products](/rs.md)
-
-[Spark API with DataFrame and SQL: book reviews and user data](/bookRev-sparkAPI.md)
+[Spark Structured API: book reviews and user data](/bookRev-sparkAPI.md)
 
 
 [Yelp web scrapping: top barbers in California, CA](/mimi-yelp-webScrap.md)
