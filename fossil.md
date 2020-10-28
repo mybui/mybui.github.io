@@ -2,9 +2,18 @@
 
 ## Goals
 #### 1. High speciation rates: when and where we observe a lot of first occurrences
+
+![png](output_21_0.png)
+
+![png](output_27_0.png)
+
+![png](output_28_0.png)
+
 #### 2. Sampling localities by 10x10 areas and dectect high speciation rates
 #### 3. Logistic regression: what is a reasonable expectation for the proportion of first occurrences observed now given past sampling density
 #### 4. Statistical testing: if the observed number of first occurrences is significantly higher than what we would expect
+
+![png](output_55_0.png)
 
 ## Attributes
 - LONG and LAT give the longitude and latitude, respectively, of where a given fossil occurrence was found.
