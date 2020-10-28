@@ -32,7 +32,7 @@
 
 ### 2. Data Science
 
-[Fossil analysis: detecting patterns of speciation in time and space](/fossil.md)
+[Statistical testing and fossil analysis: detecting patterns of speciation in time and space](/fossil.md)
 
 [Spark Structured API: book reviews and user data](/bookRev-sparkAPI.md)
 
