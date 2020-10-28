@@ -32,8 +32,9 @@
 
 ### 2. Data Science
 
-[Spark Structured API: book reviews and user data](/bookRev-sparkAPI.md)
+[Fossil analysis: detecting patterns of speciation in time and space](/fossil.md)
 
+[Spark Structured API: book reviews and user data](/bookRev-sparkAPI.md)
 
 [Yelp web scrapping: top barbers in California, CA](/mimi-yelp-webScrap.md)
 
