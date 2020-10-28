@@ -1,4 +1,4 @@
-# Fossil analysis: detecting patterns of speciation in time and space
+# Statistical testing and fossil analysis: detecting patterns of high speciation in time and space
 
 ## Goals
 #### 1. High speciation rates: when and where we observe a lot of first occurrences
@@ -11,7 +11,7 @@
 
 #### 2. Sampling localities by 10x10 areas and dectect high speciation rates
 #### 3. Logistic regression: what is a reasonable expectation for the proportion of first occurrences observed now given past sampling density
-#### 4. Statistical testing: if the observed number of first occurrences is significantly higher than what we would expect
+#### 4. Statistical testing alpha=0.05: if the observed number of first occurrences is significantly higher than what we would expect
 
 ![png](images/output_55_0.png)
 
@@ -2161,7 +2161,7 @@ regression
 
 
 
-### 4. Statistical testing: if the observed number of first occurrences is significantly higher than what we would expect
+### 4. Statistical testing with alpha=0.05: if the observed number of first occurrences is significantly higher than what we would expect
 
 #### For each European locality, calculate the expected proportion of first occurrences in the focal area surrounding the locality using the logistic regression calculated
 
