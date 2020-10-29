@@ -109,7 +109,6 @@
     </tr>
   </tbody>
 </table>
-</div>
 
 
 ```python
