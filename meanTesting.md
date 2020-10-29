@@ -209,7 +209,7 @@ for i in label:
 
 
 
-![png](output_5_1.png)
+![png](images/output_5_1.png)
 
 
     p_perm: 0.0
