@@ -32,6 +32,8 @@
 
 ### 2. Data Science
 
+[Hypothesis testing of differences in sample means using 1000 permutation and t-test: leadership analysis](/meanTesting.md)
+
 [Statistical testing and fossil analysis: detecting patterns of speciation in time and space](/fossil.md)
 
 [Spark Structured API: book reviews and user data](/bookRev-sparkAPI.md)
