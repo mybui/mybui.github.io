@@ -2,8 +2,128 @@
 
 ## Goals
 #### 1. Determine which leadership construct significantly changes over pre-Covid and during-Covid times
-#### 2. Hypothesis testing: difference in means
+#### 2. Hypothesis testing alpha=0.05: difference in means or not
 #### 3. Find the average differences
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>changes = exp - covid</th>
+      <th>p_values_permutation</th>
+      <th>p_values_t_test</th>
+      <th>significant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>AHC</th>
+      <td>0.345929</td>
+      <td>0.000</td>
+      <td>0.0000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Bout</th>
+      <td>-0.182161</td>
+      <td>0.000</td>
+      <td>0.0000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>CO</th>
+      <td>0.256943</td>
+      <td>0.000</td>
+      <td>0.0000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>GC</th>
+      <td>0.355430</td>
+      <td>0.000</td>
+      <td>0.0000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>IPC</th>
+      <td>0.174999</td>
+      <td>0.000</td>
+      <td>0.0000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>LMX</th>
+      <td>0.021892</td>
+      <td>0.095</td>
+      <td>0.1692</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>LS</th>
+      <td>0.004266</td>
+      <td>0.462</td>
+      <td>0.8994</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>MF</th>
+      <td>0.395901</td>
+      <td>0.000</td>
+      <td>0.0000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>PS</th>
+      <td>-0.009199</td>
+      <td>0.420</td>
+      <td>0.7900</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>RE</th>
+      <td>0.045658</td>
+      <td>0.001</td>
+      <td>0.0032</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>WES</th>
+      <td>0.182599</td>
+      <td>0.000</td>
+      <td>0.0000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>WLC</th>
+      <td>-0.894634</td>
+      <td>0.000</td>
+      <td>0.0000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>WLSP</th>
+      <td>0.819718</td>
+      <td>0.000</td>
+      <td>0.0000</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 ```python
@@ -114,7 +234,7 @@ for i in label:
 
 
 
-![png](output_5_3.png)
+![png](images/output_5_3.png)
 
 
     p_perm: 0.0
@@ -125,7 +245,7 @@ for i in label:
 
 
 
-![png](output_5_5.png)
+![png](images/output_5_5.png)
 
 
     p_perm: 0.0
@@ -136,7 +256,7 @@ for i in label:
 
 
 
-![png](output_5_7.png)
+![png](images/output_5_7.png)
 
 
     p_perm: 0.0
@@ -147,7 +267,7 @@ for i in label:
 
 
 
-![png](output_5_9.png)
+![png](images/output_5_9.png)
 
 
     p_perm: 0.0
@@ -158,7 +278,7 @@ for i in label:
 
 
 
-![png](output_5_11.png)
+![png](images/output_5_11.png)
 
 
     p_perm: 0.095
@@ -169,7 +289,7 @@ for i in label:
 
 
 
-![png](output_5_13.png)
+![png](images/output_5_13.png)
 
 
     p_perm: 0.462
@@ -180,7 +300,7 @@ for i in label:
 
 
 
-![png](output_5_15.png)
+![png](images/output_5_15.png)
 
 
     p_perm: 0.0
@@ -191,7 +311,7 @@ for i in label:
 
 
 
-![png](output_5_17.png)
+![png](images/output_5_17.png)
 
 
     p_perm: 0.42
@@ -202,7 +322,7 @@ for i in label:
 
 
 
-![png](output_5_19.png)
+![png](images/output_5_19.png)
 
 
     p_perm: 0.001
@@ -213,7 +333,7 @@ for i in label:
 
 
 
-![png](output_5_21.png)
+![png](images/output_5_21.png)
 
 
     p_perm: 0.0
@@ -224,7 +344,7 @@ for i in label:
 
 
 
-![png](output_5_23.png)
+![png](images/output_5_23.png)
 
 
     p_perm: 0.0
@@ -235,7 +355,7 @@ for i in label:
 
 
 
-![png](output_5_25.png)
+![png](images/output_5_25.png)
 
 
     p_perm: 0.0
