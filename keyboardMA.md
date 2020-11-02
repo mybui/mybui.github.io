@@ -3,8 +3,12 @@
 ## Goals
 #### 1. Modeling the keyboard
 #### 2. Fiit's law parameter estimation: r-squared = 0.709
+![png](images/output_12_1.png)
+![png](images/output_12_2.png)
 #### 3. Average typing time of 1000 most frequent words: 0.99
+![png](images/output_17_0.png)
 #### 4. Zipf's law parameter estimation & average typing time of 1000 most frequent words: 0.71
+![png](images/output_21_0.png)
 
 
 ```python
@@ -464,11 +468,11 @@ plt.show()
 
 
 
-![png](output_12_1.png)
+![png](images/output_12_1.png)
 
 
 
-![png](output_12_2.png)
+![png](images/output_12_2.png)
 
 
 ### 3. Average typing time of 1000 most frequent words
@@ -610,7 +614,7 @@ plt.close()
 ```
 
 
-![png](output_17_0.png)
+![png](images/output_17_0.png)
 
 
 ### 4. Zipf's law parameter estimation & average typing time of 1000 most frequent words
@@ -656,7 +660,7 @@ plt.show()
 ```
 
 
-![png](output_21_0.png)
+![png](images/output_21_0.png)
 
 
 
