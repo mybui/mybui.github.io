@@ -4,6 +4,8 @@
 
 ### 1. Machine Learning
 
+[QWERTY keyboard typing with 1 finger: modeling and analysis using Fiit's law and Zipf's law](/keyboardMA.md)
+
 [Collaborative filtering recommender system with PySpark: Amazon products](/rs.md)
 
 [Ensemble Learning with RandomForest and XGBoost: speed dating data set](/EL.md)
