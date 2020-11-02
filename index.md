@@ -1,5 +1,4 @@
-## Mimi's Portfolio
-### Machine learning, data science and data engineering
+## Mimi's Portfolio in Machine Learning, Data Science and Data Engineering
 ---
 
 [QWERTY keyboard typing with 1 finger: modeling and analysis using Fiit's law and Zipf's law](/keyboardMA.md)
