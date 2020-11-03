@@ -7,7 +7,7 @@
 
 [Ensemble Learning with RandomForest and XGBoost: speed dating data set](/EL.md)
 
-[Data Pipeline with Python and SQLite for research analysis: final results as a report (sample only)](/sample_covidRep.pdf)
+[Data Pipeline with Python and SQLite for research analysis: final results as a report (sample only)](/sample_report.pdf)
 
 [Hypothesis testing of differences in sample means using 1000 permutation and t-test: leadership analysis](/meanTesting.md)
 
