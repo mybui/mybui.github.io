@@ -13,6 +13,12 @@
 
 [Statistical testing and fossil analysis: detecting patterns of speciation in time and space](/fossil.md)
 
+[Database model of an university: queries](/uniDB-queries.txt)
+
+[Database model of an university: SQL DB setup](/uniDB-setup.txt)
+
+[Database model of an university: class UML and relational models](/uniDB.md)
+
 [Dimensionality Reduction: 1000 fashion MNIST](/dr.md)
 
 [Support Vector Machine: classification of graduation and regression of admission data](/svm.md)
@@ -20,12 +26,6 @@
 [Supervised learning: regression and classification of math final grades](/studentML.md)
 
 [Spark Structured API: book reviews and user data](/bookRev-sparkAPI.md)
-
-[Database model of an university: queries](/uniDB-queries.txt)
-
-[Database model of an university: SQL DB setup](/uniDB-setup.txt)
-
-[Database model of an university: class UML and relational models](/uniDB.md)
 
 [Yelp web scrapping: top barbers in California, CA](/mimi-yelp-webScrap.md)
 
