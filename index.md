@@ -7,17 +7,17 @@
 
 [Ensemble Learning with RandomForest and XGBoost: speed dating data set](/EL.md)
 
+[Data Pipeline with Python and SQLite for research analysis: final results as a report (sample only)](/sample_covidRep.pdf)
+
+[Hypothesis testing of differences in sample means using 1000 permutation and t-test: leadership analysis](/meanTesting.md)
+
+[Statistical testing and fossil analysis: detecting patterns of speciation in time and space](/fossil.md)
+
 [Dimensionality Reduction: 1000 fashion MNIST](/dr.md)
 
 [Support Vector Machine: classification of graduation and regression of admission data](/svm.md)
 
 [Supervised learning: regression and classification of math final grades](/studentML.md)
-
-[Multivariate linear regression: recommended prices for house](/houseLR.md)
-
-[Hypothesis testing of differences in sample means using 1000 permutation and t-test: leadership analysis](/meanTesting.md)
-
-[Statistical testing and fossil analysis: detecting patterns of speciation in time and space](/fossil.md)
 
 [Spark Structured API: book reviews and user data](/bookRev-sparkAPI.md)
 
@@ -28,6 +28,16 @@
 [Large data set analysis with Dask and Plotly: NYC parking ticket violations](/nycParkingTickets.md)
 
 [Reddit API: Subreddit Python](/reddit-api.md)
+
+[Automate writing JSON data to CSV, and back](/jsonCsv.md)
+
+[Database model of an university: queries](/uniDB-queries.txt)
+
+[Database model of an university: SQL DB setup](/uniDB-setup.txt)
+
+[Database model of an university: class UML and relational models](/uniDB.md)
+
+[Multivariate linear regression: recommended prices for house](/houseLR.md)
 
 [World airports, airlines and their routes](/airport.md)
 
@@ -40,15 +50,5 @@
 [Gender gap STEM degrees](/stemDegree.md)
 
 [Titanic gender vs. survival](/titanic.md)
-
-[Data Pipeline with Python and SQLite for research analysis: final results as a report (sample only)](/sample_covidRep.pdf)
-
-[Automate writing JSON data to CSV, and back](/jsonCsv.md)
-
-[Database model of an university: queries](/uniDB-queries.txt)
-
-[Database model of an university: SQL DB setup](/uniDB-setup.txt)
-
-[Database model of an university: class UML and relational models](/uniDB.md)
 
 [Theaters and ticket systems UML](/theaterUML.md)
