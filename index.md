@@ -21,6 +21,12 @@
 
 [Spark Structured API: book reviews and user data](/bookRev-sparkAPI.md)
 
+[Database model of an university: queries](/uniDB-queries.txt)
+
+[Database model of an university: SQL DB setup](/uniDB-setup.txt)
+
+[Database model of an university: class UML and relational models](/uniDB.md)
+
 [Yelp web scrapping: top barbers in California, CA](/mimi-yelp-webScrap.md)
 
 [Spotify API: Adele and her artwork](/spotifyApi.md)
@@ -30,12 +36,6 @@
 [Reddit API: Subreddit Python](/reddit-api.md)
 
 [Automate writing JSON data to CSV, and back](/jsonCsv.md)
-
-[Database model of an university: queries](/uniDB-queries.txt)
-
-[Database model of an university: SQL DB setup](/uniDB-setup.txt)
-
-[Database model of an university: class UML and relational models](/uniDB.md)
 
 [Multivariate linear regression: recommended prices for house](/houseLR.md)
 
