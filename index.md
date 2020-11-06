@@ -1,5 +1,4 @@
-## Mimi's Portfolio
-### Full-stack Data Science
+## Mimi's Portfolio: Full-stack Data Science
 ---
 
 [QWERTY keyboard typing with 1 finger: modeling and analysis using Fiit's law and Zipf's law](/keyboardMA.md)
